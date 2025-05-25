@@ -9,7 +9,7 @@ header, footer {
     background-color: #1a1a1a;
     padding: 20px 0;
     text-align: center;
-}
+    }
 
  nav ul {
     list-style: none;
@@ -18,23 +18,23 @@ header, footer {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
+    }
 
  nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-}
+    }
 
 nav ul li a:hover {
     color: #ff9900;
-}
+    }
 
 main {
     padding: 40px;
     text-align: center;
-}
+    }
 
 footer {
      font-size: 0.9em;
@@ -45,4 +45,4 @@ footer {
     height: 50px;
     margin: 10px;
     display: block;
-}
+    }
