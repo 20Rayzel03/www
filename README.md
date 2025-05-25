@@ -1,56 +1,77 @@
-📖 Mein Blog – React + Tailwind Projekt
-Dies ist ein persönliches Blog-Projekt, erstellt mit HTML,CSS, PHP und fieleicht java. Die Website ist als moderne, responsive Blogplattform gedacht, auf der Beiträge veröffentlicht, gelesen und eventuell kommentiert werden können.
+# 📖 Mein Blog – React + Tailwind Projekt
 
-🚀 Projekt Aufbau
-⚛️Hauptseite
-    Willkommens Text und Bild
-        -Bild soll aus mehreren bildernbestehen (Thema IT) und sich von
-        rechts nach links bewegen
-    Kurtzer Teaser für meine BIO mit Bilde
-    und ersten daten und dan ein Butten mit (mehr erfahren - weiterleitung zu BIO)
-    3-5 Kasten mit den letzen Blogposts
-        (nicht alle blogposts sollen von allen gelesen werden können)
-        (Anmeldung erfordelich)
-    Footer mit Impressuns und Datenschutz weiterleitung
+Willkommen zu meinem persönlichen Blog-Projekt!  
+Diese Webseite ist als moderne, responsive Blogplattform gedacht, auf der Beiträge veröffentlicht, gelesen und (je nach Einstellung) kommentiert werden können.  
+Ursprünglich entwickelt mit HTML, CSS, PHP – eventuell auch mit Java – und aktuell modernisiert mit **React** und **Tailwind CSS**.
 
-⚛️Bio 
-    Linke seite ersten daten von mir
-    Link Großes bild von mir
-    Kurtze geschichte über mich
-    Werdegang
-        Abschlüsse
-        Arbeitgeber
-    Meine Interressen
-    Meine Projekte
-        Meine Erungenschaften
-    Sozialen Medien
-    Footer mit Impressuns und Datenschutz weiterleitung
+---
 
-⚛️Blog
-    Eine liste mit den Letzen Blog posts
-    Blogpost ankliken geht zu neuen seite mit dem Blogpost
-        Können mit oder ohne anmeldung Kommentieren
-        Ohne soll User Anonym haben
-    Footer mit Impressuns und Datenschutz weiterleitung
+## 🚀 Projekt Aufbau
 
-⚛️Kontakt
-    Kontaktseite
+### ⚛️ Hauptseite
+- Willkommens-Text mit IT-Themen-Bildern  
+  (Slideshow aus mehreren Bildern, bewegt sich von rechts nach links)
+- Kurzer Teaser zu meiner Bio inkl. Bild und Button  
+  → `Mehr erfahren` (leitet zur Bio-Seite weiter)
+- 3–5 Kästen mit den neuesten Blogposts  
+  → Nicht alle Posts sind öffentlich sichtbar (Anmeldung erforderlich)
+- Footer mit Links zu **Impressum** und **Datenschutz**
 
-⚛️Login
-    Registrieren
-    Anmelden
-        haken (weiterleitung zum adminpennel)
+---
 
-📝Hoster kann Blogposts erstellen
-    Es soll eine eigene seite dafür geben (Adminpennel)    
-🎨 Styling mit CSS
-🔍 SEO-freundliche Struktur
-🌙 Dark-Mode
+### ⚛️ Bio
+- Linke Seite: Kurze Fakten über mich
+- Rechte Seite: Großes Bild von mir
+- Eine kurze Geschichte über mich
+- Mein Werdegang:
+  - Schul- & Berufsabschlüsse
+  - Arbeitgeber
+- Interessen & Hobbys
+- Projekte & Errungenschaften
+- Links zu meinen sozialen Medien
+- Footer mit Impressum & Datenschutz
 
-🛠️ Installation
+---
+
+### ⚛️ Blog
+- Übersicht aller veröffentlichten Blogposts
+- Klick auf Blogpost → Weiterleitung zur Detailseite
+  - Kommentare möglich:
+    - Mit Anmeldung → Benutzername
+    - Ohne Anmeldung → "Anonym"
+- Footer mit Impressum & Datenschutz
+
+---
+
+### ⚛️ Kontakt
+- Kontaktformular mit Möglichkeit zur Nachricht an mich
+
+---
+
+### ⚛️ Login / Registrierung
+- Registrieren & Anmelden
+- Nach Login → Weiterleitung zum **Adminpanel**
+
+---
+
+### 📝 Adminpanel (für Hoster)
+- Eigene Seite zur Verwaltung:
+  - Neue Blogposts erstellen
+  - Beiträge bearbeiten oder löschen
+
+---
+
+## 🎨 Features
+- Styling mit **Tailwind CSS**
+- SEO-freundliche Struktur
+- 🌙 Unterstützung für **Dark Mode**
+
+---
+
+## 🛠️ Installation
+
+```bash
 sudo rm -r /var/www 
 cd /var/
 git clone https://github.com/20Rayzel03/www
 cd /www
-
-
