@@ -1,2 +1,3 @@
-# www
-Dei einfache version meiner Webseite
+# Webseite von PJU
+
+Dies ist das Reposetory von meine Webseite
