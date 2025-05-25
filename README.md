@@ -1,9 +1,8 @@
-# 📖 Mein Blog – React + Tailwind Projekt
+# 📖 Mein Blog
 
 Willkommen zu meinem persönlichen Blog-Projekt!  
 Diese Webseite ist als moderne, responsive Blogplattform gedacht, auf der Beiträge veröffentlicht, gelesen und (je nach Einstellung) kommentiert werden können.  
-Ursprünglich entwickelt mit HTML, CSS, PHP – eventuell auch mit Java – und aktuell modernisiert mit **React** und **Tailwind CSS**.
-
+Ursprünglich entwickelt mit HTML, CSS, PHP – eventuell auch mit Java.
 ---
 
 ## 🚀 Projekt Aufbau
