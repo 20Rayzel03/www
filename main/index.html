@@ -1,3 +1,6 @@
+<?php
+// Optional: Hier kannst du später PHP-Code einfügen, z.B. für Blogposts aus Datenbank.
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -5,17 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hauptseite - IT Themen</title>
   <link rel="stylesheet" href="css/index.css">
-
+</head>
 <body>
   <nav role="navigation" aria-label="Hauptnavigation">
     <div class="nav-left">
-    <img src="pic/logo.jpg" alt="Logo" height="40">
+      <img src="pic/logo.jpg" alt="Logo" height="40">
     </div>
     <ul>
-      <li><a href="index.html" aria-current="page">Startseite</a></li>
-      <li><a href="bio.html">Bio</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="kontakt.php" aria-current="page">Kontakt</a></li>
+      <li><a href="index.php" aria-current="page">Startseite</a></li>
+      <li><a href="bio.php">Bio</a></li>
+      <li><a href="blog.php">Blog</a></li>
+      <li><a href="kontakt.php">Kontakt</a></li>
     </ul>
     <a href="login.php" class="login-btn" role="button" aria-label="Anmelden">Anmelden</a>
   </nav>
@@ -28,8 +31,8 @@
     <img src="pic/real_me.jpg" alt="Porträtbild" />
     <div class="content">
       <h2>Über mich</h2>
-      <p>Ich bin ein leidenschaftlicher IT-Enthusiast mit Fokus auf Server Management (z.B. Windows Server / Ubuntu Server), First & Second LVL Support. Erfahre mehr über mich über den Bio reiter</p>
-      <button onclick="location.href='bio.html'">Mehr erfahren</button>
+      <p>Ich bin ein leidenschaftlicher IT-Enthusiast mit Fokus auf Server Management (z.B. Windows Server / Ubuntu Server), First & Second LVL Support. Erfahre mehr über mich über den Bio-Reiter.</p>
+      <button onclick="location.href='bio.php'">Mehr erfahren</button>
     </div>
   </section>
 
@@ -39,14 +42,14 @@
 
   <footer>
     <div>
-      <a href="impressum.html" rel="noopener noreferrer">Impressum</a> | 
-      <a href="datenschutz.html" rel="noopener noreferrer">Datenschutz</a>
+      <a href="impressum.php" rel="noopener noreferrer">Impressum</a> | 
+      <a href="datenschutz.php" rel="noopener noreferrer">Datenschutz</a>
     </div>
     <div>© 2024 Alle Rechte vorbehalten.</div>
   </footer>
 
   <script>
-    // Angenommen: User ist **nicht eingeloggt**
+    // Beispiel: User ist **nicht eingeloggt**
     const loggedIn = false;
 
     const posts = [
@@ -129,5 +132,5 @@
       container.appendChild(card);
     });
   </script>
+</body>
 </html>
-
