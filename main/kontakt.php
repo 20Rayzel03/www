@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <img src="pic/logo.jpg" alt="Logo" height="40">
         </div>
         <ul>
-            <li><a href="index.html">Startseite</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="bio.html">Bio</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
