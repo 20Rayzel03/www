@@ -54,10 +54,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <img src="pic/logo.jpg" alt="Logo" height="40">
         </div>
         <ul>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="bio.html">Bio</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+            <li><a href="kontakt.php" aria-current="page">Kontakt</a></li>
         </ul>
         <a href="login.php" class="login-btn" role="button" aria-label="Anmelden">Anmelden</a>
     </nav>
@@ -109,8 +109,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     <footer>
         <div>
-            <a href="impressum.html" rel="noopener noreferrer">Impressum</a> |
-            <a href="datenschutz.html" rel="noopener noreferrer">Datenschutz</a>
+            <a href="impressum.php" rel="noopener noreferrer">Impressum</a> |
+            <a href="datenschutz.php" rel="noopener noreferrer">Datenschutz</a>
         </div>
         <div>© 2025 Alle Rechte vorbehalten.</div>
     </footer>
