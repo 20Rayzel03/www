@@ -55,8 +55,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="bio.html">Bio</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="bio.php">Bio</a></li>
+            <li><a href="blog.php">Blog</a></li>
             <li><a href="kontakt.php" aria-current="page">Kontakt</a></li>
         </ul>
         <a href="login.php" class="login-btn" role="button" aria-label="Anmelden">Anmelden</a>
