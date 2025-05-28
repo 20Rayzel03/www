@@ -12,7 +12,7 @@
         <img src="pic/logo.jpg" alt="Logo" height="40">
       </div>
       <ul>
-        <li><a href="index.php">Startseite</a></li>
+        <li><a href="index.html">Startseite</a></li>
         <li><a href="bio.php">Bio</a></li>
         <li><a href="blog.php">Blog</a></li>
         <li><a href="kontakt.php">Kontakt</a></li>
@@ -57,7 +57,7 @@
             <a href="impressum.php" rel="noopener noreferrer">Impressum</a> |
             <a href="datenschutz.php" rel="noopener noreferrer">Datenschutz</a>
         </div>
-        <div>© 2024 Alle Rechte vorbehalten.</div>
+        <div>© 2025 Alle Rechte vorbehalten.</div>
     </footer>
 </body>
 </html>

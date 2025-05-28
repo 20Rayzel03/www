@@ -1,9 +1,8 @@
-/* Grundlayout und NAVIGATION (für alle Seiten identisch einfügen) */
+/* blog.css: Moderner Blogkarten-Look */
 
 body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: #f7f9fc;
   color: #222;
   min-height: 100vh;
@@ -11,7 +10,6 @@ body {
   flex-direction: column;
 }
 
-/* Navigation bar */
 nav {
   background: #243b55;
   color: white;
@@ -81,18 +79,101 @@ nav .login-btn:focus {
   color: white;
 }
 
-/* Responsive Navigation */
-@media (max-width: 640px) {
-  nav ul {
-    gap: 0.5rem;
-  }
-  nav .login-btn {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.9rem;
-  }
+header {
+  background: linear-gradient(90deg, #243b55 0%, #141e30 100%);
+  color: white;
+  padding: 3rem 1rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+header h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  z-index: 10;
+  position: relative;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+header p {
+  font-size: 1.15rem;
+  color: #dbeafe;
+  margin: 0;
 }
 
-/* Optional: Footer-Grunddesign */
+.container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
+  padding: 2rem;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.blog-post {
+  background: #f2f8fd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.07);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.blog-post:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 22px rgb(0 100 200 / 0.10);
+}
+.blog-post img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  background: #e8eef5;
+}
+.blog-post-content {
+  padding: 1.2rem 1rem 1.2rem 1rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.blog-post-content h2 {
+  font-size: 1.35rem;
+  margin: 0 0 0.4rem 0;
+  color: #2b446e;
+  font-weight: 800;
+}
+.blog-post-content .meta {
+  color: #0078d7;
+  font-size: 0.97rem;
+  margin-bottom: 0.7rem;
+}
+.blog-post-content p {
+  color: #333e57;
+  margin: 0 0 0.8rem 0;
+  flex: 1 1 auto;
+}
+.blog-post-content a {
+  align-self: flex-start;
+  color: #0078d7;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.3rem;
+  transition: color 0.2s;
+  font-size: 1.04rem;
+}
+.blog-post-content a:hover,
+.blog-post-content a:focus {
+  color: #005ea2;
+  text-decoration: underline;
+  outline: none;
+}
+
 footer {
   background: #243b55;
   color: white;
@@ -113,4 +194,16 @@ footer a:focus {
   color: #b0d9ff;
   text-decoration: underline;
   outline: none;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 1.5rem 0.5rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  .blog-posts {
+    gap: 1.2rem;
+  }
 }
