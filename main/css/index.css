@@ -70,7 +70,7 @@ nav ul li a:focus {
   background-color: #005ea2;
   outline: none;
 }
-nav button.login-btn {
+nav .login-btn {
   background-color: #0078d7;
   border: none;
   color: white;
@@ -83,8 +83,8 @@ nav button.login-btn {
   user-select: none;
   box-shadow: 0 6px 12px rgba(0, 120, 215, 0.4);
 }
-nav button.login-btn:hover,
-nav button.login-btn:focus {
+nav .login-btn:hover,
+nav .login-btn:focus {
   background-color: #005ea2;
   outline: none;
 }
