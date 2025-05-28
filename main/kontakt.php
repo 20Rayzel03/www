@@ -1,6 +1,6 @@
 <?php
 // ------ Einstellungen ------
-$empfaenger = "deine@email.de"; // HIER DEINE EIGENE E-MAIL EINTRAGEN!
+$empfaenger = "julius.pollag@jqpollag.de"; // HIER DEINE EIGENE E-MAIL EINTRAGEN!
 $betreff_standard = "Neue Kontaktanfrage von deiner Webseite";
 
 // ------ Formular gesendet? ------
