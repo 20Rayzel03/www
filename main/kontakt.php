@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt - jqpollag.de</title>
-    <link rel="stylesheet" href="public.css" />
+    <link rel="stylesheet" href="css/kontakt.css" />
 </head>
 <body>
     <nav role="navigation" aria-label="Hauptnavigation">
