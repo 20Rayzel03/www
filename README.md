@@ -60,12 +60,6 @@ Ursprünglich entwickelt mit HTML, CSS, PHP – eventuell auch mit Java.
 
 ---
 
-## 🎨 Features
-- Styling mit **Tailwind CSS**
-- SEO-freundliche Struktur
-- 🌙 Unterstützung für **Dark Mode**
-
----
 
 ## 🛠️ Installation
 
@@ -73,4 +67,4 @@ Ursprünglich entwickelt mit HTML, CSS, PHP – eventuell auch mit Java.
 sudo rm -r /var/www 
 cd /var/
 git clone https://github.com/20Rayzel03/www
-cd /www
+cd www/
