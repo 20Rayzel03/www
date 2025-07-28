@@ -204,6 +204,39 @@
     }
   </style>
 </head>
+  <nav role="navigation" aria-label="Hauptnavigation">
+    <div class="nav-left">
+      <img src="pic/logo.jpg" alt="Logo" height="40">
+    </div>
+    <ul>
+      <li><a href="index.html" aria-current="page">Startseite</a></li>
+      <li><a href="bio.php">Bio</a></li>
+      <li><a href="blog.php">Blog</a></li>
+      <li><a href="kontakt.php">Kontakt</a></li>
+    </ul>
+    <a href="login.php" class="login-btn" role="button" aria-label="Anmelden">Anmelden</a>
+  </nav>
+
+  <header>
+    <h1>Willkommen auf jqpollag.de</h1>
+  </header>
+
+  <section id="bio-teaser" class="container" aria-label="Kurzvorstellung">
+    <img src="pic/real_me.jpg" alt="Porträtbild" />
+    <div class="content">
+      <h2>Über mich</h2>
+      <p>Ich bin ein leidenschaftlicher IT-Enthusiast mit Fokus auf Server Management (z.B. Windows Server / Ubuntu Server), First & Second LVL Support. Erfahre mehr über mich über den Bio-Reiter.</p>
+      <button onclick="location.href='bio.php'">Mehr erfahren</button>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <a href="impressum.php" rel="noopener noreferrer">Impressum</a> | 
+      <a href="datenschutz.php" rel="noopener noreferrer">Datenschutz</a>
+    </div>
+    <div>© 2025 Alle Rechte vorbehalten.</div>
+  </footer>
 <body>
   <main class="dashboard-container" aria-label="Adminpanel Dashboard">
     <h1>Adminpanel</h1>
