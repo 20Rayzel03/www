@@ -8,7 +8,7 @@
   <!-- Bio-Teaser -->
   <section id="bio-teaser" class="container">
     <div class="bio-image">
-      <img src="assets/img/real_me.png" alt="Porträtbild">
+      <img class="bio-photo" src="assets/img/real_me.png" alt="Porträtbild">
     </div>
     <div class="content">
       <h2>Über mich</h2>

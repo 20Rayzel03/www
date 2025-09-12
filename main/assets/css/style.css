@@ -228,3 +228,17 @@ footer a:focus {
   justify-content: center;
   text-align: left;
 }
+
+
+/* Fixe Bildgröße – unmissverständlich */
+#bio-teaser .bio-image { flex: 0 0 auto; }
+
+.bio-photo {
+  width: 180px !important;
+  height: 180px !important;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;   /* schön zugeschnitten */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
