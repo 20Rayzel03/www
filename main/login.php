@@ -5,17 +5,18 @@ include 'assets/db.php';
 $error = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $username = trim($_POST['username']);
+    $login = trim($_POST['login']);   // Kann Username ODER Email sein
     $password = trim($_POST['password']);
 
-    if ($username && $password) {
-        $stmt = $conn->prepare("SELECT id, passwort FROM benutzer WHERE username = ?");
-        $stmt->bind_param("s", $username);
+    if ($login && $password) {
+        // Suche nach Username ODER Email
+        $stmt = $conn->prepare("SELECT id, username, passwort FROM benutzer WHERE username = ? OR email = ?");
+        $stmt->bind_param("ss", $login, $login);
         $stmt->execute();
         $stmt->store_result();
 
         if ($stmt->num_rows > 0) {
-            $stmt->bind_result($id, $hash);
+            $stmt->bind_result($id, $username, $hash);
             $stmt->fetch();
 
             if (password_verify($password, $hash)) {
@@ -52,8 +53,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php endif; ?>
 
     <form class="contact-form" action="login.php" method="post">
-      <label for="username">Benutzername</label>
-      <input type="text" id="username" name="username" required>
+      <label for="login">Benutzername oder E-Mail</label>
+      <input type="text" id="login" name="login" required>
 
       <label for="password">Passwort</label>
       <input type="password" id="password" name="password" required>

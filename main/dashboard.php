@@ -15,12 +15,13 @@ if (!isset($_SESSION['user_id'])) {
 </header>
 
 <main class="container">
-  <p>Willkommen, <?= htmlspecialchars($_SESSION['username']); ?>! 🎉</p>
-  <p>Hier kannst du deine Admin-Bereiche verwalten.</p>
+  <h2>Willkommen, <?= htmlspecialchars($_SESSION['username']); ?>! 🎉</h2>
+  <p>Du bist nun eingeloggt und kannst hier die internen Bereiche verwalten.</p>
 
-  <a href="anfragen.php" class="btn">Kontaktanfragen ansehen</a>
-  <br><br>
-  <a href="logout.php" class="btn">Logout</a>
+  <div style="margin-top:2rem;">
+    <a href="anfragen.php" class="btn">📩 Kontaktanfragen ansehen</a>
+    <a href="logout.php" class="btn" style="margin-left:1rem;">🚪 Logout</a>
+  </div>
 </main>
 
 <?php include 'assets/footer.php'; ?>
