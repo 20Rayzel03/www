@@ -1,5 +1,5 @@
 <?php include 'assets/header.php'; ?>
-<?php include 'db.php'; ?>
+<?php include 'assets/db.php'; ?>
 
 <header>
   <h1>Kontakt</h1>
