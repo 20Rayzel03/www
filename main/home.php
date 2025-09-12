@@ -1,4 +1,4 @@
-<?php include 'extras/header.php'; ?>
+<?php include 'assets/header.php'; ?>
 
 <header>
   <h1>Willkommen auf jqpollag.de</h1>
@@ -41,4 +41,4 @@
   </section>
 </main>
 
-<?php include 'extras/footer.php'; ?>
+<?php include 'assets/footer.php'; ?>

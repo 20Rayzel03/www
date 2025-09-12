@@ -1,209 +1,27 @@
-/* blog.css: Moderner Blogkarten-Look */
-
-body {
-  margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: #f7f9fc;
-  color: #222;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-nav {
-  background: #243b55;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.8rem 1rem;
-  font-weight: 600;
-  box-shadow: 0 2px 10px rgb(0 0 0 / 0.15);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-nav .nav-left {
-  font-size: 1.3rem;
-  letter-spacing: 1.2px;
-  user-select: none;
-  display: flex;
-  align-items: center;
-}
-nav .nav-left img {
-  height: 40px;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-nav ul li a {
-  color: white;
-  padding: 0.4rem 0.7rem;
-  border-radius: 6px;
-  transition: background-color 0.25s ease;
-  font-size: 1rem;
-  display: block;
-  user-select: none;
-  text-decoration: none;
-}
-nav ul li a:hover,
-nav ul li a:focus,
-nav ul li a[aria-current="page"] {
-  background-color: #005ea2;
-  outline: none;
-}
-nav .login-btn {
-  background-color: #0078d7;
-  border: none;
-  color: white;
-  padding: 0.4rem 1rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.25s ease;
-  font-weight: 700;
-  user-select: none;
-  box-shadow: 0 6px 12px rgba(0, 120, 215, 0.4);
-  text-decoration: none;
-  display: inline-block;
-}
-nav .login-btn:hover,
-nav .login-btn:focus {
-  background-color: #005ea2;
-  outline: none;
-  color: white;
-}
-
-header {
-  background: linear-gradient(90deg, #243b55 0%, #141e30 100%);
-  color: white;
-  padding: 3rem 1rem 2rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-header h1 {
-  font-weight: 900;
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  z-index: 10;
-  position: relative;
-  text-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-header p {
-  font-size: 1.15rem;
-  color: #dbeafe;
-  margin: 0;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 3rem auto;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
-  padding: 2rem;
-}
-
+/* Blog Seite */
 .blog-posts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-}
-
-.blog-post {
-  background: #f2f8fd;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.07);
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-  display: flex;
-  flex-direction: column;
-}
-.blog-post:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 6px 22px rgb(0 100 200 / 0.10);
+  margin: 3rem auto;
+  max-width: 1000px;
 }
 .blog-post img {
   width: 100%;
   height: 170px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
-  background: #e8eef5;
 }
 .blog-post-content {
-  padding: 1.2rem 1rem 1.2rem 1rem;
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
+  padding: 1rem;
 }
 .blog-post-content h2 {
   font-size: 1.35rem;
-  margin: 0 0 0.4rem 0;
   color: #2b446e;
-  font-weight: 800;
+  margin: 0 0 0.4rem 0;
 }
 .blog-post-content .meta {
   color: #0078d7;
-  font-size: 0.97rem;
-  margin-bottom: 0.7rem;
-}
-.blog-post-content p {
-  color: #333e57;
-  margin: 0 0 0.8rem 0;
-  flex: 1 1 auto;
-}
-.blog-post-content a {
-  align-self: flex-start;
-  color: #0078d7;
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 0.3rem;
-  transition: color 0.2s;
-  font-size: 1.04rem;
-}
-.blog-post-content a:hover,
-.blog-post-content a:focus {
-  color: #005ea2;
-  text-decoration: underline;
-  outline: none;
-}
-
-footer {
-  background: #243b55;
-  color: white;
-  padding: 1.5rem 1rem;
-  text-align: center;
   font-size: 0.95rem;
-  box-shadow: 0 -4px 20px rgb(0 0 0 / 0.15);
-  margin-top: auto;
-}
-footer a {
-  color: #85c1ff;
-  margin: 0 0.8rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-footer a:hover,
-footer a:focus {
-  color: #b0d9ff;
-  text-decoration: underline;
-  outline: none;
-}
-
-@media (max-width: 800px) {
-  .container {
-    padding: 1.5rem 0.5rem;
-  }
-  header h1 {
-    font-size: 2rem;
-  }
-  .blog-posts {
-    gap: 1.2rem;
-  }
+  margin-bottom: 0.7rem;
 }
