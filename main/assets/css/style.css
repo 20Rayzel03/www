@@ -213,10 +213,26 @@ footer a:focus {
     font-size: 0.9rem;
   }
 }
-/* Bio-Teaser Bildbegrenzung */
-#bio-teaser img {
-  max-width: 180px;   /* maximale Breite */
-  width: 100%;        /* passt sich kleineren Bildschirmen an */
+/* Bio-Teaser Layout */
+#bio-teaser {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  background: white;
+  margin: 3rem auto;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+}
+
+/* Portraitbild */
+#bio-teaser .bio-image img {
+  max-width: 180px;   /* maximale Breite fixiert */
+  width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
