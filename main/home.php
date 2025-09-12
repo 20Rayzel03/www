@@ -1,4 +1,4 @@
-<?php include '/assets/header.php'; ?>
+<?php include 'assets/header.php'; ?>
 
 <header>
   <h1>Willkommen auf jqpollag.de</h1>
@@ -7,7 +7,7 @@
 <main>
   <!-- Bio-Teaser -->
   <section id="bio-teaser" class="container">
-    <img src="/assets/img/real_me.webp" alt="Porträtbild" />
+    <img src="assets/img/real_me.png" alt="Porträtbild" />
     <div class="content">
       <h2>Über mich</h2>
       <p>
@@ -41,4 +41,4 @@
   </section>
 </main>
 
-<?php include '/assets/footer.php'; ?>
+<?php include 'assets/footer.php'; ?>
