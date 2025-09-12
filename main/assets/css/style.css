@@ -234,8 +234,8 @@ footer a:focus {
 #bio-teaser .bio-image { flex: 0 0 auto; }
 
 .bio-photo {
-  width: 180px !important;
-  height: 180px !important;
+  width: 240px !important;
+  height: 240px !important;
   display: block;
   border-radius: 12px;
   object-fit: cover;   /* schön zugeschnitten */
