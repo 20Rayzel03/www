@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "webuser";     
 $pass = "9oo*nlqoLZ2u!w3QO@vk"; 
-$dbname = "jqpollag.de"; 
+$dbname = "jqpollag"; 
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 
