@@ -1,4 +1,4 @@
-<?php include 'assets/header.php'; ?>
+<?php include '/assets/header.php'; ?>
 
 <header>
   <h1>Blog</h1>
@@ -8,7 +8,7 @@
 <main>
   <section class="blog-posts container">
     <article class="blog-post">
-      <img src="assets/img/logo.webp" alt="Beispielbild">
+      <img src="/assets/img/logo.webp" alt="Beispielbild">
       <div class="blog-post-content">
         <h2>Neue JavaScript Funktionen 2024</h2>
         <div class="meta">10. Mai 2024</div>
@@ -20,7 +20,7 @@
     </article>
 
     <article class="blog-post restricted">
-      <img src="assets/img/logo.webp" alt="Beispielbild">
+      <img src="/assets/img/logo.webp" alt="Beispielbild">
       <div class="blog-post-content">
         <h2>Sicherheitspraktiken für Webentwickler</h2>
         <div class="meta">28. April 2024</div>
@@ -32,7 +32,7 @@
     </article>
 
     <article class="blog-post">
-      <img src="assets/img/logo.webp" alt="Beispielbild">
+      <img src="/assets/img/logo.webp" alt="Beispielbild">
       <div class="blog-post-content">
         <h2>Cloud Infrastruktur verstehen</h2>
         <div class="meta">15. April 2024</div>
@@ -45,4 +45,4 @@
   </section>
 </main>
 
-<?php include 'assets/footer.php'; ?>
+<?php include '/assets/footer.php'; ?>

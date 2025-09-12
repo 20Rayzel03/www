@@ -1,4 +1,4 @@
-<?php include 'assets/header.php'; ?>
+<?php include '/assets/header.php'; ?>
 
 <header>
   <h1>Über mich</h1>
@@ -6,7 +6,7 @@
 
 <main>
   <section class="bio-container">
-    <img src="assets/img/real_me.webp" alt="Porträt von mir" />
+    <img src="/assets/img/real_me.webp" alt="Porträt von mir" />
 
     <div>
       <h2>Hallo, ich bin JQ Pollag</h2>
@@ -34,4 +34,4 @@
   </section>
 </main>
 
-<?php include 'assets/footer.php'; ?>
+<?php include '/assets/footer.php'; ?>

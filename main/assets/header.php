@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>jqpollag.de</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 
   <?php
   // Prüfen, welche Seite geladen ist, und optional extra CSS einfügen
@@ -17,7 +17,7 @@
 <body>
   <nav role="navigation" aria-label="Hauptnavigation">
     <div class="nav-left">
-      <img src="assets/img/logo.webp" alt="Logo" height="40">
+      <img src="/assets/img/logo.webp" alt="Logo" height="40">
     </div>
     <ul>
       <li><a href="home.php">Startseite</a></li>
