@@ -36,12 +36,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php if ($success): ?>
       <div class="form-message success">
        ✅ Vielen Dank für deine Nachricht! Ich melde mich bald bei dir.
-      </div>
-     <?php elseif ($error): ?>
+     </div>
+    <?php elseif ($error): ?>
       <div class="form-message error">
-       ❌ <?= htmlspecialchars($error) ?>
-      </div>
+        ❌ <?= htmlspecialchars($error) ?>
+     </div>
     <?php endif; ?>
+
 
     <form class="contact-form" action="kontakt.php" method="post">
       <label for="name">Name</label>

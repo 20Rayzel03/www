@@ -39,15 +39,15 @@
 .contact-form button:hover {
   background-color: #005ea2;
 }
-
-/* Meldungsboxen unter dem Header etwas nach unten, zentriert und mit Rahmen */
+/* Meldungsboxen für Kontaktseite */
 .form-message {
-  max-width: 640px;          /* nicht zu breit */
-  margin: 2.5rem auto 1.5rem;/* Abstand nach oben vergrößert + zentrieren */
+  max-width: 600px;
+  margin: 2rem auto;           /* zentriert + Abstand nach oben/unten */
   padding: 1rem 1.25rem;
   border-radius: 10px;
-  text-align: center;        /* Text mittig */
+  text-align: center;
   font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .form-message.success {
@@ -61,4 +61,5 @@
   border: 2px solid #f44336;
   color: #9a0007;
 }
+
 .contact-page { margin-top: 2rem; } /* gesamter Block rutscht runter */
