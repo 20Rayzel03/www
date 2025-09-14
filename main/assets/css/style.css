@@ -4,7 +4,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -16,7 +15,6 @@ body {
   flex-direction: column;
   scroll-behavior: smooth;
 }
-
 a {
   color: #0078d7;
   text-decoration: none;
@@ -24,7 +22,6 @@ a {
 a:hover, a:focus {
   text-decoration: underline;
 }
-
 /* Container */
 .container {
   max-width: 1200px;
@@ -32,7 +29,6 @@ a:hover, a:focus {
   padding: 0 1rem;
   width: 100%;
 }
-
 /* ============================
    Navigation
 ============================ */
@@ -88,7 +84,6 @@ nav .login-btn:hover,
 nav .login-btn:focus {
   background-color: #005ea2;
 }
-
 /* ============================
    Header
 ============================ */
@@ -105,7 +100,6 @@ header h1 {
   margin: 0;
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-
 /* ============================
    Buttons
 ============================ */
@@ -126,7 +120,6 @@ header h1 {
   background-color: #005ea2;
   text-decoration: none;
 }
-
 /* ============================
    Blog Cards (Basis)
 ============================ */
@@ -175,7 +168,6 @@ header h1 {
   padding: 5px 8px;
   border-radius: 6px;
 }
-
 /* ============================
    Footer
 ============================ */
@@ -197,7 +189,6 @@ footer a:hover,
 footer a:focus {
   color: #b0d9ff;
 }
-
 /* ============================
    Responsive
 ============================ */
@@ -228,11 +219,8 @@ footer a:focus {
   justify-content: center;
   text-align: left;
 }
-
-
 /* Fixe Bildgröße – unmissverständlich */
 #bio-teaser .bio-image { flex: 0 0 auto; }
-
 .bio-photo {
   width: 240px !important;
   height: 240px !important;
