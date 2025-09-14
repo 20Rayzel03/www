@@ -50,13 +50,13 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-.form-message.success {
+.form-message success {
   background: #e6ffed;
   border: 2px solid #4caf50;
   color: #256029;
 }
 
-.form-message.error {
+.form-message error {
   background: #ffe6e6;
   border: 2px solid #f44336;
   color: #9a0007;
