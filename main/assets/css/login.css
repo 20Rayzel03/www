@@ -37,3 +37,8 @@
 .contact-form button:hover {
   background-color: #005ea2;
 }
+/* Abstände für Fehlermeldungen im Login */
+.login-error {
+  margin-top: 1.5rem;   /* Abstand nach oben */
+  margin-bottom: 1.5rem; /* Abstand nach unten */
+}
