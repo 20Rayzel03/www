@@ -40,18 +40,25 @@
   background-color: #005ea2;
 }
 
-/* Erfolg- & Fehlermeldungen beim Kontaktformular */
+/* Meldungsboxen unter dem Header etwas nach unten, zentriert und mit Rahmen */
 .form-message {
-  margin-top: 1.5rem;   /* Abstand nach oben */
-  margin-bottom: 1.5rem; /* Abstand nach unten */
+  max-width: 640px;          /* nicht zu breit */
+  margin: 2.5rem auto 1.5rem;/* Abstand nach oben vergrößert + zentrieren */
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  text-align: center;        /* Text mittig */
+  font-weight: 600;
 }
 
 .form-message.success {
-  margin-top: 1.5rem;   /* Abstand nach oben */
-  margin-bottom: 1.5rem; /* Abstand nach unten */
+  background: #e6ffed;
+  border: 2px solid #4caf50;
+  color: #256029;
 }
 
 .form-message.error {
-  margin-top: 1.5rem;   /* Abstand nach oben */
-  margin-bottom: 1.5rem; /* Abstand nach unten */
+  background: #ffe6e6;
+  border: 2px solid #f44336;
+  color: #9a0007;
 }
+.contact-page { margin-top: 2rem; } /* gesamter Block rutscht runter */

@@ -32,14 +32,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </header>
 
 <main>
-  <section class="container">
+  <section class="container contact-page">
     <?php if ($success): ?>
       <div class="form-message success">
-        ✅ Vielen Dank für deine Nachricht! Ich melde mich bald bei dir.
+       ✅ Vielen Dank für deine Nachricht! Ich melde mich bald bei dir.
       </div>
-    <?php elseif ($error): ?>
+     <?php elseif ($error): ?>
       <div class="form-message error">
-        ❌ <?= htmlspecialchars($error) ?>
+       ❌ <?= htmlspecialchars($error) ?>
       </div>
     <?php endif; ?>
 
