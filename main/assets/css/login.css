@@ -1,0 +1,39 @@
+/* Login-Seite: zentrierte Karte im gleichen Stil wie Kontakt */
+.contact-form {
+  max-width: 420px;
+  margin: 3rem auto;
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
+}
+.contact-form label {
+  font-weight: 600;
+  color: #243b55;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.contact-form input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #e3e6eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.contact-form input:focus {
+  border-color: #0078d7;
+  outline: none;
+}
+.contact-form button {
+  background-color: #0078d7;
+  border: none;
+  color: white;
+  padding: 0.7rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.contact-form button:hover {
+  background-color: #005ea2;
+}
