@@ -11,9 +11,9 @@
     <div>
       <h2>Hallo, ich bin Julius Pollag</h2>
       <p>
-        Ich bin ein leidenschaftlicher IT-Enthusiast mit Schwerpunkt auf 
+        Ich bin ein leidenschaftlicher IT-Enthusiast der seine ersten erfahrungen im 
         <strong>Server Management</strong> (Windows Server & Linux/Ubuntu) sowie im 
-        <strong>First & Second Level Support</strong>.
+        <strong>First & Second Level Support gemacht hat.</strong>.
       </p>
 
       <h3>Ausbildung</h3>
