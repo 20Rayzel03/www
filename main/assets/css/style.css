@@ -22,13 +22,6 @@ a {
 a:hover, a:focus {
   text-decoration: underline;
 }
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  width: 100%;
-}
 /* ============================
    Navigation
 ============================ */
@@ -204,29 +197,41 @@ footer a:focus {
     font-size: 0.9rem;
   }
 }
-/* Layout des Teasers (falls noch nicht vorhanden) */
-#bio-teaser {
-  background: white;
+.home-container {
+  max-width: 900px;
   margin: 3rem auto;
+  background: white;
   border-radius: 10px;
-  padding: 2rem 2rem 2.5rem;
-  max-width: 1200px;   /* vorher 900px */
   box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+  padding: 2rem;
   display: flex;
-  align-items: center;
-  gap: 2rem;
   flex-wrap: wrap;
-  justify-content: center;
-  text-align: left;
+  gap: 2rem;
+  align-items: center;
 }
-/* Fixe Bildgröße – unmissverständlich */
-#bio-teaser .bio-image { flex: 0 0 auto; }
-.bio-photo {
-  width: 240px !important;
-  height: 240px !important;
-  display: block;
-  border-radius: 12px;
-  object-fit: cover;   /* schön zugeschnitten */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+.home-container img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.09);
 }
-
+.home-container ul {
+  list-style: none;
+  padding: 0;
+}
+.home-container li {
+  margin-bottom: 0.4rem;
+}
+@media (max-width: 800px) {
+  .home-container {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+}
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+}
