@@ -41,5 +41,3 @@
 </main>
 
 <?php include 'assets/footer.php'; ?>
-
-
