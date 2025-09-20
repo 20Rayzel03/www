@@ -214,6 +214,7 @@ footer a:focus {
   max-width: 280px;
   border-radius: 10px;
   box-shadow: 0 4px 16px rgb(0 0 0 / 0.09);
+  align-items: center;
 }
 .home-container ul {
   list-style: none;
