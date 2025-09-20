@@ -9,7 +9,7 @@
     <img src="assets/img/real_me.png" alt="Porträt von mir" />
 
     <div>
-      <h2>Hallo, ich bin JQ Pollag</h2>
+      <h2>Hallo, ich bin Julius Pollag</h2>
       <p>
         Ich bin ein leidenschaftlicher IT-Enthusiast mit Schwerpunkt auf 
         <strong>Server Management</strong> (Windows Server & Linux/Ubuntu) sowie im 
