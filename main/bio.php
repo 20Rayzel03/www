@@ -13,7 +13,7 @@
       <p>
         Ich bin ein leidenschaftlicher IT-Enthusiast der seine ersten erfahrungen im 
         <strong>Server Management</strong> (Windows Server & Linux/Ubuntu) sowie im 
-        <strong>First & Second Level Support gemacht hat.</strong>.
+        <strong>First & Second Level Support</strong> gemacht hat.
       </p>
 
       <h3>Ausbildung</h3>
@@ -45,13 +45,14 @@
         <li>Verbesserungen nachhaltig umsetzen – im Team oder eigenständig</li>
       </ul>
 
-      <h3>Was mich antreibt</h3>
+      <h3>Was sind meine Freizeitaktivitäten</h3>
       <p>
         Ich lebe IT auch privat. Zu Hause betreibe ich ein <strong>Homelab</strong> mit einem
         <em>Dell PowerEdge R720xd</em> und eigenem <em>UniFi</em>-Netzwerk. Darauf laufen u. a. ein
         <strong>Windows Server 2022</strong> mit <strong>Active Directory</strong> (inkl. Synchronisierung zu
         <strong>Microsoft 365</strong>), eine selbst gehostete <strong>Nextcloud</strong> und eine kleine Website.
         So bleibe ich technisch am Ball, teste Updates und Neuerscheinungen und bringe die besten Ansätze in den Arbeitsalltag ein.
+        Außerdem Fahre ich gernde Downhill, mache geräde meinen Motorad Führerschein und bin im GoKart Club in Vilsbiburg.
       </p>
     </div>
   </section>

@@ -6,11 +6,8 @@
 
 <main>
   <!-- Bio-Teaser -->
-  <section id="bio-teaser" class="container">
-    <div class="bio-image">
-      <img class="bio-photo" src="assets/img/real_me.png" alt="Porträtbild">
-    </div>
-    <div class="content">
+  <section class="home-container">
+    <img src="assets/img/real_me.png" alt="Porträt von mir" />
       <h2>Über mich</h2>
       <p>
         Ich bin ein leidenschaftlicher IT-Enthusiast mit Fokus auf Server Management
@@ -44,3 +41,5 @@
 </main>
 
 <?php include 'assets/footer.php'; ?>
+
+
