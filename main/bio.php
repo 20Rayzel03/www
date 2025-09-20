@@ -5,7 +5,7 @@
 </header>
 
 <main>
-  <section class="container">
+  <section class="bio-container">
     <img src="assets/img/real_me.png" alt="Porträt von mir" />
 
     <div>
@@ -53,17 +53,7 @@
         <strong>Microsoft 365</strong>), eine selbst gehostete <strong>Nextcloud</strong> und eine kleine Website.
         So bleibe ich technisch am Ball, teste Updates und Neuerscheinungen und bringe die besten Ansätze in den Arbeitsalltag ein.
       </p>
-
-      <h3>Meine Stärken (Kurzfassung)</h3>
-      <ul>
-        <li>✅ Windows Server Administration</li>
-        <li>✅ Linux/Ubuntu Server Management</li>
-        <li>✅ Netzwerk &amp; IT-Security Grundlagen</li>
-        <li>✅ Support &amp; Troubleshooting</li>
-      </ul>
     </div>
   </section>
 </main>
-
-
 <?php include 'assets/footer.php'; ?>
