@@ -31,11 +31,7 @@
 
       <h3>Berufserfahrung</h3>
       <p>
-        Nach der Ausbildung bin ich – bedarfsbedingt – ins <strong>Werkstatt-/Service-Team</strong> gewechselt, eine für das
-        Unternehmen wichtige Einheit. Dort programmiere, repariere und warte ich bis heute <strong>BOS- und
-        Industrie-Funksysteme</strong>, u. a. <em>Motorola, Hytera, Sepura</em> und <em>Kenwood</em> Hand- und
-        Festeinbaufunkgeräte auf <strong>TETRA</strong>- und <strong>DMR</strong>-Basis, <strong>TETRA Inhaus Versorgung</strong>
-        für Industriekunden sowie <strong>Spezial-Funklösungen</strong> für kleine und mittelständische Unternehmen.
+
       </p>
 
       <h3>Wie ich arbeite</h3>
