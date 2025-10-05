@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
-<link rel="stylesheet" href="assets/css/rechtliches.css">
-
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum</title>
+    <link rel="stylesheet" href="assets/css/rechtliches.css">
     <link rel="stylesheet" href="css/rechtliches.css">
 </head>
 <body>
