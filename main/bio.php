@@ -6,7 +6,7 @@
 
 <main>
   <section class="bio-container">
-    <img src="assets/img/real_me.png" alt="Porträt von mir" />
+    <img src="assets/img/real_me.png?v=1" alt="Porträt von mir" />
 
     <div>
       <h2>Hallo, ich bin Julius Pollag</h2>
