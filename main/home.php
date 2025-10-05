@@ -60,6 +60,6 @@
   <?php include 'assets/footer.php'; ?>
 
   <!-- Bootstrap JS -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
