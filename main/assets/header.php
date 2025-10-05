@@ -6,7 +6,10 @@
   <link rel="icon" href="/assets/img/logo.png?v=1" sizes="any">
   <link rel="icon" type="image/png?v=1" href="/assets/img/logo.png?v=1">
   <title>jqpollag.de</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/cookies.css">
+
 
   <?php
   // Prüfen, welche Seite geladen ist, und optional extra CSS einfügen
