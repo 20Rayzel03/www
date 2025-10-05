@@ -1,30 +1,52 @@
-/* ============================
-   Global Reset & Base
-============================ */
-*, *::before, *::after {
+/* =====================================================
+   Basis Stylesheet – JQ Pollag Webprojekt
+   Struktur:
+   1. Reset & Basis
+   2. Navigation
+   3. Header / Hero
+   4. Buttons
+   5. Seiten-Layouts
+   6. Footer
+   7. Responsive Anpassungen
+===================================================== */
+
+/* ------------------------------
+   1. Reset & Basis
+------------------------------ */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-}
-body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: #f7f9fc;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f7f9fc;
   color: #222;
+  line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  scroll-behavior: smooth;
 }
+
 a {
   color: #0078d7;
   text-decoration: none;
 }
-a:hover, a:focus {
+a:hover {
   text-decoration: underline;
 }
-/* ============================
-   Navigation
-============================ */
+
+/* ------------------------------
+   2. Navigation
+------------------------------ */
 nav {
   background: #243b55;
   color: white;
@@ -32,237 +54,171 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0.8rem 1rem;
-  font-weight: 600;
-  box-shadow: 0 2px 10px rgb(0 0 0 / 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
 nav .nav-left img {
   height: 40px;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
   margin: 0;
-  padding: 0;
   align-items: center;
 }
+
 nav ul li a {
   color: white;
   padding: 0.4rem 0.7rem;
   border-radius: 6px;
   transition: background-color 0.25s ease;
-  font-size: 1rem;
 }
+
 nav ul li a:hover,
 nav ul li a:focus,
 nav ul li a[aria-current="page"] {
   background-color: #005ea2;
 }
+
 nav .login-btn {
   background-color: #0078d7;
   border: none;
   color: white;
   padding: 0.4rem 1rem;
-  font-size: 1rem;
   border-radius: 6px;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 120, 215, 0.3);
   transition: background-color 0.25s ease;
-  box-shadow: 0 6px 12px rgba(0, 120, 215, 0.4);
 }
-nav .login-btn:hover,
-nav .login-btn:focus {
+
+nav .login-btn:hover {
   background-color: #005ea2;
 }
-/* ============================
-   Header
-============================ */
+
+/* ------------------------------
+   3. Header / Hero
+------------------------------ */
 header {
   background: linear-gradient(90deg, #243b55 0%, #141e30 100%);
   color: white;
-  padding: 3rem 1rem 4rem;
   text-align: center;
+  padding: 3rem 1rem 4rem;
   position: relative;
 }
+
 header h1 {
   font-weight: 900;
   font-size: 3rem;
   margin: 0;
-  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* ============================
-   Buttons
-============================ */
+
+/* ------------------------------
+   4. Buttons
+------------------------------ */
 .btn {
+  display: inline-block;
   background-color: #0078d7;
-  border: none;
   color: white;
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
   border-radius: 6px;
+  border: none;
   cursor: pointer;
-  display: inline-block;
+  font-weight: 600;
   transition: background-color 0.25s ease;
-  box-shadow: 0 6px 12px rgba(0, 120, 215, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 120, 215, 0.25);
 }
-.btn:hover,
-.btn:focus {
+
+.btn:hover {
   background-color: #005ea2;
   text-decoration: none;
 }
-/* ============================
-   Blog Cards (Basis)
-============================ */
-.post-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgb(0 0 0 / 0.08);
-  padding: 1.5rem 1.5rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: box-shadow 0.3s ease;
-  position: relative;
+
+/* ------------------------------
+   5. Seiten-Layouts
+------------------------------ */
+
+/* Allgemein */
+main {
+  flex: 1;
+  padding: 2rem 1rem;
 }
-.post-card:hover {
-  box-shadow: 0 10px 30px rgb(0 0 0 / 0.15);
+
+/* Entfernt Boxen von Unterseiten */
+.bio-container,
+.legal-container,
+.contact-form,
+.blog-posts,
+.home-container {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
 }
-.post-card h3 {
-  margin-top: 0;
-  font-size: 1.4rem;
+
+/* Einheitliche Textformatierung */
+main h1, main h2, main h3 {
   color: #243b55;
+  margin-bottom: 1rem;
 }
-.post-card p {
-  color: #555;
+main p, main li {
+  color: #333;
   font-size: 1rem;
-  line-height: 1.4;
 }
-.post-card .meta {
-  font-size: 0.9rem;
-  color: #999;
+
+/* Container zentriert */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-/* Gesperrte Beiträge */
-.restricted {
-  filter: grayscale(80%);
-  cursor: not-allowed;
-}
-.restricted::before {
-  content: "🔒 Anmeldung erforderlich";
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: #f4433640;
-  color: #b71c1c;
-  font-weight: 700;
-  font-size: 0.85rem;
-  padding: 5px 8px;
-  border-radius: 6px;
-}
-/* ============================
-   Footer
-============================ */
+
+/* ------------------------------
+   6. Footer
+------------------------------ */
 footer {
   background: #243b55;
   color: white;
-  padding: 1.5rem 1rem;
   text-align: center;
+  padding: 1.5rem 1rem;
   font-size: 0.95rem;
-  box-shadow: 0 -4px 20px rgb(0 0 0 / 0.15);
   margin-top: auto;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
 }
+
 footer a {
   color: #85c1ff;
   margin: 0 0.8rem;
   font-weight: 600;
 }
-footer a:hover,
-footer a:focus {
+footer a:hover {
   color: #b0d9ff;
 }
-/* ============================
-   Responsive
-============================ */
-@media (max-width: 700px) {
+
+/* ------------------------------
+   7. Responsive Anpassungen
+------------------------------ */
+@media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
   }
+
   nav ul {
     gap: 0.5rem;
   }
+
   nav .login-btn {
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
   }
-}
-.home-container {
-  max-width: 900px;
-  margin: 3rem auto;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: center;
-}
-.home-container img {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgb(0 0 0 / 0.09);
-  align-items: center;
-}
-.home-container ul {
-  list-style: none;
-  padding: 0;
-}
-.home-container li {
-  margin-bottom: 0.4rem;
-}
-@media (max-width: 800px) {
-  .home-container {
-    flex-direction: column;
+
+  main {
     padding: 1.5rem;
   }
-}
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  width: 100%;
-}
-/* ================
-   Entfernt Box-Stile von Unterseiten
-   ================ */
-
-/* Bio-Seite */
-.bio-container,
-.home-container,
-.legal-container,
-.contact-form,
-.blog-posts {
-  background: none !important;
-  box-shadow: none !important;
-  border: none !important;
-  padding: 0 !important;
-  margin-top: 2rem !important;
-}
-
-/* Optional: Schrift & Layout an Home-Stil anpassen */
-.bio-container h2,
-.legal-container h1,
-.legal-container h2,
-.contact-form h2,
-.blog-post-content h2 {
-  color: #222 !important;
-}
-
-section, main {
-  background: none !important;
-  box-shadow: none !important;
 }
