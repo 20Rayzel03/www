@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<link rel="stylesheet" href="assets/css/rechtliches.css">
+
 <html lang="de">
 <head>
     <meta charset="UTF-8">
