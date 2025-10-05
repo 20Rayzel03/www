@@ -9,9 +9,9 @@
   <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
   <p>
     <strong>JQ Pollag</strong><br>
-    Musterstraße 12<br>
-    12345 Musterstadt<br>
-    E-Mail: <a href="mailto:info@jqpollag.de">info@jqpollag.de</a>
+    Bayern / Landshut<br>
+    Deutschland<br>
+    E-Mail: <a href="mailto:batchadmin@jqpollag.de">batchadmin@jqpollag.de</a>
   </p>
 
   <h2>2. Erhebung und Verarbeitung personenbezogener Daten</h2>

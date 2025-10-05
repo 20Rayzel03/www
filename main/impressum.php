@@ -6,28 +6,21 @@
 
   <h2>Angaben gemäß § 5 TMG</h2>
   <p>
-    <strong>JQ Pollag</strong><br>
-    Musterstraße 12<br>
-    12345 Musterstadt<br>
+    <strong>Julius P</strong><br>
+    Bayern / Landshut<br>
     Deutschland
   </p>
 
   <h2>Kontakt</h2>
   <p>
-    Telefon: +49 (0)123 456789<br>
-    E-Mail: <a href="mailto:info@jqpollag.de">info@jqpollag.de</a>
-  </p>
-
-  <h2>Umsatzsteuer-ID</h2>
-  <p>
-    Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE123456789
+    E-Mail: <a href="mailto:batchadmin@jqpollag.de">batchadmin@jqpollag.de</a>
   </p>
 
   <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
   <p>
-    JQ Pollag<br>
-    Musterstraße 12<br>
-    12345 Musterstadt
+    Julius P<br>
+    Bayern / Landshut<br>
+    Deutschland
   </p>
 
   <h2>Haftung für Inhalte</h2>
