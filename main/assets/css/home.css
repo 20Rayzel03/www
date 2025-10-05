@@ -1,12 +1,7 @@
 /* ===========================
-   Eigenes Design für home.php
+   Home Page Styles
    =========================== */
 
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* Masthead / Header */
 header.masthead {
   position: relative;
   width: 100%;
@@ -39,7 +34,7 @@ header.masthead .content {
 header.masthead h1 {
   font-size: 4rem;
   font-weight: 700;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
 
@@ -57,10 +52,13 @@ header.masthead p {
   background-color: #4d7d7a;
 }
 
-/* Navbar Farbe */
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255,255,255,.8);
+/* Abschnitts-Layout */
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #fff;
+
+section h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
