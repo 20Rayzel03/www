@@ -236,3 +236,33 @@ footer a:focus {
   padding: 0 1rem;
   width: 100%;
 }
+/* ================
+   Entfernt Box-Stile von Unterseiten
+   ================ */
+
+/* Bio-Seite */
+.bio-container,
+.home-container,
+.legal-container,
+.contact-form,
+.blog-posts {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-top: 2rem !important;
+}
+
+/* Optional: Schrift & Layout an Home-Stil anpassen */
+.bio-container h2,
+.legal-container h1,
+.legal-container h2,
+.contact-form h2,
+.blog-post-content h2 {
+  color: #222 !important;
+}
+
+section, main {
+  background: none !important;
+  box-shadow: none !important;
+}
