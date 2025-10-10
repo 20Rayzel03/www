@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "root";     
-$pass = ""; 
-$dbname = "webuser"; 
+$user = "webuser";     
+$pass = "9oo*nlqoLZ2u!w3QO@vk"; 
+$dbname = "jqpollag"; 
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 
