@@ -1,5 +1,3 @@
-<?php include 'assets/header.php'; ?>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -47,6 +45,7 @@
     </form>
   </div>
 
-  <?php include 'assets/footer.php'; ?>
+<?php include 'footer-login.php'; ?>
+
 </body>
 </html>

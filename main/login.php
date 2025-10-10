@@ -38,8 +38,6 @@
 //}
 ?>
 
-<?php include 'assets/header.php'; ?>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -68,7 +66,7 @@
           <input type="checkbox" id="remember" name="remember">
           <span>Angemeldet bleiben</span>
         </label>
-        <a href="#">Passwort vergessen?</a>
+        <a href="kontakt.php">Passwort vergessen?</a>
       </div>
 
       <button type="submit">Anmelden</button>
@@ -78,7 +76,7 @@
       </div>
     </form>
   </div>
+<?php include 'footer-login.php'; ?>
 
-  <?php include 'assets/footer.php'; ?>
 </body>
 </html>

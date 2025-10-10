@@ -12,7 +12,6 @@
 
 
   <?php
-  // Prüfen, welche Seite geladen ist, und optional extra CSS einfügen
   $page = basename($_SERVER['PHP_SELF'], ".php");
   if (file_exists("assets/css/$page.css")) {
       echo '<link rel="stylesheet" href="assets/css/' . $page . '.css">';
@@ -30,5 +29,5 @@
       <li><a href="blog.php">Blog</a></li>
       <li><a href="kontakt.php">Kontakt</a></li>
     </ul>
-    <a href="login.php" class="login-btn" role="button">Anmelden</a>
+    <a href="login.php" class="login-btn" role="button">Login</a>
   </nav>

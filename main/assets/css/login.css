@@ -142,3 +142,59 @@ button:hover {
   color: #fff;
   font-size: 0.9rem;
 }
+/* =======================
+   Auth Footer (glossy style)
+======================= */
+.auth-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.auth-footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-footer .back-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.auth-footer .back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.auth-footer .links {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.auth-footer .links a {
+  color: #efefef;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.auth-footer .links a:hover {
+  text-decoration: underline;
+}
