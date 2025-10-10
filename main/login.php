@@ -1,4 +1,4 @@
-//<?php
+<?php
 //session_start();
 //include 'assets/db.php';
 //
@@ -36,8 +36,7 @@
 //        $error = "❌ Bitte alle Felder ausfüllen.";
 //    }
 //}
-//?>
-//
+?>
 
 <?php include 'assets/header.php'; ?>
 
