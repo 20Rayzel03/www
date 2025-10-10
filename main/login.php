@@ -76,7 +76,7 @@
       </div>
     </form>
   </div>
-<?php include 'footer-login.php'; ?>
+<?php include 'assets/footer-login.php'; ?>
 
 </body>
 </html>
