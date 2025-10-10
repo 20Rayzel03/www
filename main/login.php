@@ -1,43 +1,46 @@
 <?php
-//session_start();
-//include 'assets/db.php';
-//
-//$error = "";
-//
-//if ($_SERVER["REQUEST_METHOD"] === "POST") {
-//    $login = trim($_POST['login']);   // Kann Username ODER Email sein
-//    $password = trim($_POST['password']);
-//
-//    if ($login && $password) {
-//        // Suche nach Username ODER Email
-//        $stmt = $conn->prepare("SELECT id, username, passwort FROM benutzer WHERE username = ? OR email = ?");
-//        $stmt->bind_param("ss", $login, $login);
-//        $stmt->execute();
-//        $stmt->store_result();
-//
-//        if ($stmt->num_rows > 0) {
-//            $stmt->bind_result($id, $username, $hash);
-//            $stmt->fetch();
-//
-//            if (password_verify($password, $hash)) {
-//                // Login erfolgreich
-//                $_SESSION['user_id'] = $id;
-//                $_SESSION['username'] = $username;
-//                header("Location: dashboard.php");
-//                exit;
-//            } else {
-//                $error = "❌ Falsches Passwort.";
-//            }
-//        } else {
-//            $error = "❌ Benutzer nicht gefunden.";
-//        }
-//        $stmt->close();
-//    } else {
-//        $error = "❌ Bitte alle Felder ausfüllen.";
-//    }
-//}
-?>
+session_start();
+include './assets/db.php';
 
+$error = "";
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $login = isset($_POST['login']) ? trim($_POST['login']) : '';
+    $password = isset($_POST['password']) ? trim($_POST['password']) : '';
+
+    if ($login !== '' && $password !== '') {
+        $sql = "SELECT id, username, passwort FROM benutzer WHERE username = ? OR email = ? LIMIT 1";
+        $stmt = $conn->prepare($sql);
+
+        if ($stmt === false) {
+            $error = "Serverfehler (DB-Prepare).";
+        } else {
+            $stmt->bind_param("ss", $login, $login);
+            $stmt->execute();
+            $stmt->store_result();
+
+            if ($stmt->num_rows === 1) {
+                $stmt->bind_result($id, $username, $hash);
+                $stmt->fetch();
+
+                if (is_string($hash) && password_verify($password, $hash)) {
+                    session_regenerate_id(true);
+                    $_SESSION['user_id'] = $id;
+                    $_SESSION['username'] = $username;
+                    header("Location: dashboard.php");
+                    exit;
+                }
+                $error = "❌ Falsches Passwort.";
+            } else {
+                $error = "❌ Benutzer nicht gefunden.";
+            }
+            $stmt->close();
+        }
+    } else {
+        $error = "❌ Bitte alle Felder ausfüllen.";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -48,16 +51,20 @@
 </head>
 <body>
   <div class="wrapper">
-    <form action="#" method="post">
+    <form action="" method="post" novalidate>
       <h2>Login</h2>
 
+      <?php if ($error): ?>
+        <div class="error"><?php echo htmlspecialchars($error, ENT_QUOTES, 'UTF-8'); ?></div>
+      <?php endif; ?>
+
       <div class="input-field">
-        <input type="email" name="email" required>
-        <label for="email">E-Mail-Adresse</label>
+        <input type="text" name="login" autocomplete="username" required>
+        <label for="login">E-Mail-Adresse oder Benutzername</label>
       </div>
 
       <div class="input-field">
-        <input type="password" name="password" required>
+        <input type="password" name="password" autocomplete="current-password" required>
         <label for="password">Passwort</label>
       </div>
 
@@ -76,7 +83,6 @@
       </div>
     </form>
   </div>
-<?php include 'assets/footer-login.php'; ?>
-
+  <?php include 'assets/footer-login.php'; ?>
 </body>
 </html>
