@@ -1,67 +1,85 @@
-<?php
-session_start();
-include 'assets/db.php';
-
-$error = "";
-
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $login = trim($_POST['login']);   // Kann Username ODER Email sein
-    $password = trim($_POST['password']);
-
-    if ($login && $password) {
-        // Suche nach Username ODER Email
-        $stmt = $conn->prepare("SELECT id, username, passwort FROM benutzer WHERE username = ? OR email = ?");
-        $stmt->bind_param("ss", $login, $login);
-        $stmt->execute();
-        $stmt->store_result();
-
-        if ($stmt->num_rows > 0) {
-            $stmt->bind_result($id, $username, $hash);
-            $stmt->fetch();
-
-            if (password_verify($password, $hash)) {
-                // Login erfolgreich
-                $_SESSION['user_id'] = $id;
-                $_SESSION['username'] = $username;
-                header("Location: dashboard.php");
-                exit;
-            } else {
-                $error = "❌ Falsches Passwort.";
-            }
-        } else {
-            $error = "❌ Benutzer nicht gefunden.";
-        }
-        $stmt->close();
-    } else {
-        $error = "❌ Bitte alle Felder ausfüllen.";
-    }
-}
-?>
+//<?php
+//session_start();
+//include 'assets/db.php';
+//
+//$error = "";
+//
+//if ($_SERVER["REQUEST_METHOD"] === "POST") {
+//    $login = trim($_POST['login']);   // Kann Username ODER Email sein
+//    $password = trim($_POST['password']);
+//
+//    if ($login && $password) {
+//        // Suche nach Username ODER Email
+//        $stmt = $conn->prepare("SELECT id, username, passwort FROM benutzer WHERE username = ? OR email = ?");
+//        $stmt->bind_param("ss", $login, $login);
+//        $stmt->execute();
+//        $stmt->store_result();
+//
+//        if ($stmt->num_rows > 0) {
+//            $stmt->bind_result($id, $username, $hash);
+//            $stmt->fetch();
+//
+//            if (password_verify($password, $hash)) {
+//                // Login erfolgreich
+//                $_SESSION['user_id'] = $id;
+//                $_SESSION['username'] = $username;
+//                header("Location: dashboard.php");
+//                exit;
+//            } else {
+//                $error = "❌ Falsches Passwort.";
+//            }
+//        } else {
+//            $error = "❌ Benutzer nicht gefunden.";
+//        }
+//        $stmt->close();
+//    } else {
+//        $error = "❌ Bitte alle Felder ausfüllen.";
+//    }
+//}
+//?>
+//
 
 <?php include 'assets/header.php'; ?>
 
-<header>
-  <h1>Anmelden</h1>
-</header>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | JQPOLLAG.DE</title>
+  <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#" method="post">
+      <h2>Login</h2>
 
-<main>
-  <section class="container">
-    <?php if ($error): ?>
-      <div class="login-error" style="padding:1rem; background:#ffe6e6; border:1px solid #f44336; border-radius:8px; margin-top:1.5rem; margin-bottom:1.5rem;">
-        <?= $error ?>
+      <div class="input-field">
+        <input type="email" name="email" required>
+        <label for="email">E-Mail-Adresse</label>
       </div>
-    <?php endif; ?>
 
-    <form class="contact-form" action="login.php" method="post">
-      <label for="login">Benutzername oder E-Mail</label>
-      <input type="text" id="login" name="login" required>
+      <div class="input-field">
+        <input type="password" name="password" required>
+        <label for="password">Passwort</label>
+      </div>
 
-      <label for="password">Passwort</label>
-      <input type="password" id="password" name="password" required>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember" name="remember">
+          <span>Angemeldet bleiben</span>
+        </label>
+        <a href="#">Passwort vergessen?</a>
+      </div>
 
-      <button type="submit">Login</button>
+      <button type="submit">Anmelden</button>
+
+      <div class="register">
+        <p>Noch kein Konto? <a href="register.php">Registrieren</a></p>
+      </div>
     </form>
-  </section>
-</main>
+  </div>
 
-<?php include 'assets/footer.php'; ?>
+  <?php include 'assets/footer.php'; ?>
+</body>
+</html>
