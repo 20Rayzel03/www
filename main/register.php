@@ -89,6 +89,12 @@ $emailVal    = isset($email) ? htmlspecialchars($email, ENT_QUOTES, 'UTF-8') : '
     .login-success{padding:1rem;background:#e7f7ee;border:1px solid #28a745;border-radius:8px;margin-bottom:1.5rem;color:#000;}
     .note{font-size:.9rem;opacity:.8;margin:.5rem 0 1rem;}
     .disabled-overlay{opacity:.6;pointer-events:none;}
+    .note {
+        font-size: .9rem;
+        opacity: .8;
+        margin: .5rem 0 1rem;
+        color: #919191ff;
+    }
   </style>
 </head>
 <body>
