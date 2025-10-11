@@ -9,17 +9,46 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Bootstrap Icons (für Icons in den Abschnitten) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 
   <!-- Hauptdesign -->
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Seitenspezifisches CSS -->
   <link rel="stylesheet" href="assets/css/home.css">
+  
+  <style>
+    /* Zusätzliche Styles für die neuen Abschnitte (füge das in home.css ein) */
+    .section-image {
+      inline-size: 100%;
+      block-size: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .section-content {
+      padding: 20px;
+      text-align: start;
+    }
+    .section-row {
+      align-items: center;
+      margin-block-end: 40px;
+    }
+    @media (max-inline-size: 768px) {
+      .section-row {
+        text-align: center;
+      }
+      .section-content {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- Masthead / Hero Section -->
+  <!-- Masthead / Hero Section (unverändert) -->
   <header class="masthead">
     <div class="overlay"></div>
     <div class="content">
@@ -29,30 +58,56 @@
     </div>
   </header>
 
-  <!-- Über mich -->
+  <!-- Über mich (neu gestaltet mit Bild) -->
   <section id="about" class="py-5 text-center">
     <div class="container">
-      <h2>Über mich</h2>
-      <p class="lead">Ich bin ein IT-Enthusiast mit Schwerpunkt auf Servermanagement, Support und Linux/Windows-Systemen.</p>
-      <a href="bio.php" class="btn btn-outline-secondary mt-3">Mehr erfahren</a>
+      <h2 class="mb-4">Über mich</h2>
+      <div class="row section-row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <img src="assets/images/profilbild.jpg" alt="Profilbild" class="section-image img-fluid">
+        </div>
+        <div class="col-md-8 section-content">
+          <p class="lead">Ich bin ein IT-Enthusiast mit Schwerpunkt auf Servermanagement, Support und Linux/Windows-Systemen. <i class="bi bi-person-circle text-primary"></i></p>
+          <p>Hier erfährst du mehr über meine Leidenschaft für Technologie und meine berufliche Reise.</p>
+          <a href="bio.php" class="btn btn-outline-secondary mt-3">Mehr erfahren</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Projekte -->
+  <!-- Projekte (neu gestaltet mit Bild) -->
   <section id="projects" class="py-5 bg-light text-center">
     <div class="container">
-      <h2>Projekte</h2>
-      <p class="lead">Ein Überblick über meine letzten Arbeiten und IT-Projekte.</p>
-      <a href="blog.php" class="btn btn-outline-primary mt-3">Zum Blog</a>
+      <h2 class="mb-4">Projekte</h2>
+      <div class="row section-row justify-content-center">
+        <div class="col-md-4 mb-3 order-md-2">
+          <img src="assets/images/projekte-bild.jpg" alt="Projekte Übersicht" class="section-image img-fluid">
+        </div>
+        <div class="col-md-8 section-content order-md-1">
+          <p class="lead">Ein Überblick über meine letzten Arbeiten und IT-Projekte. <i class="bi bi-code-slash text-success"></i></p>
+          <p>Entdecke, wie ich Server optimiert, Apps entwickelt und Systeme gesichert habe.</p>
+          <a href="blog.php" class="btn btn-outline-primary mt-3">Zum Blog</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Kontakt -->
+  <!-- Kontakt (neu gestaltet mit Bild/Icon) -->
   <section id="contact" class="py-5 text-center">
     <div class="container">
-      <h2>Kontakt</h2>
-      <p class="lead">Du möchtest mit mir in Kontakt treten? Ich freue mich über deine Nachricht.</p>
-      <a href="kontakt.php" class="btn btn-success mt-3">Kontakt aufnehmen</a>
+      <h2 class="mb-4">Kontakt</h2>
+      <div class="row section-row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <img src="assets/images/kontakt-bild.jpg" alt="Kontakt Illustration" class="section-image img-fluid">
+          <!-- Alternativ: Ein Icon statt Bild, falls kein Bild verfügbar -->
+          <!-- <i class="bi bi-envelope-heart display-1 text-success mb-3"></i> -->
+        </div>
+        <div class="col-md-8 section-content">
+          <p class="lead">Du möchtest mit mir in Kontakt treten? Ich freue mich über deine Nachricht. <i class="bi bi-chat-dots text-info"></i></p>
+          <p>Lass uns über IT-Themen, Projekte oder Kooperationen sprechen.</p>
+          <a href="kontakt.php" class="btn btn-success mt-3">Kontakt aufnehmen</a>
+        </div>
+      </div>
     </div>
   </section>
 

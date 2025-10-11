@@ -4,18 +4,18 @@
 
 header.masthead {
   position: relative;
-  width: 100%;
-  height: 100vh;
+  inline-size: 100%;
+  block-size: 100vh;
   background: url('../img/gokart.jpg') no-repeat center center;
   background-size: cover;
 }
 
 header.masthead .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -26,7 +26,7 @@ header.masthead .content {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100%;
+  block-size: 100%;
   color: white;
   text-align: center;
 }
@@ -40,8 +40,8 @@ header.masthead h1 {
 
 header.masthead p {
   font-size: 1.25rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-block-start: 1rem;
+  margin-block-end: 2rem;
 }
 
 .btn-primary {
@@ -54,11 +54,11 @@ header.masthead p {
 
 /* Abschnitts-Layout */
 section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-block-start: 5rem;
+  padding-block-end: 5rem;
 }
 
 section h2 {
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
 }
