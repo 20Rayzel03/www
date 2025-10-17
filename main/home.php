@@ -87,18 +87,15 @@
     </div>
   </section>
 
-  <section id="sozial">
-    <ul>
-    <li><a href="#"><i class="fa-brands
-    fa-tiktok"></i></a></li>
-    <li><a href="#"><i class="fa-brands
-    fa-x-twitter"></i></a></li>
-    <li><a href="#"><i class="fa-brands
-    fa-instagram"></i></a></li>
-    <li><a href="#"><i class="fa-brands
-    fa-whatsapp"></i></a></li>
-    </ul>
-  </section>
+<section id="sozial">
+  <ul>
+    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+  </ul>
+</section>
+
   <!-- Footer -->
   <?php include 'assets/footer.php'; ?>
 

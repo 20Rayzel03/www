@@ -1,9 +1,20 @@
-@import url('https://use.fontawesome.com/release/v6.5.1/css/all.css');
+@import url('https://use.fontawesome.com/releases/v6.5.1/css/all.css');
 
+body {
+  background-color: #0f0f10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Section-Styling */
 #sozial ul {
   display: flex;
-  gap: 20px;
-  justify-content: center; /* Icons mittig */
+  gap: 25px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 #sozial li {
@@ -11,6 +22,7 @@
   --color: #ff0050;
 }
 
+/* Grund-Button-Design */
 #sozial a {
   display: flex;
   width: 100px;
@@ -18,27 +30,54 @@
   background: #18191f;
   border-radius: 15px;
   box-shadow:
-    -2px -2px 3px #ffffff0d,
-    3px 3px 3px #00000033;
+    -6px -6px 10px #1a1b20,
+    6px 6px 10px #00000099;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  transition: all .2s ease-in-out;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Icons */
 #sozial .fa-brands {
   font-size: 44px;
   color: #555;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
+/* Glow / Licht-Effekt beim Hover */
+#sozial a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #ffffff20, #00000010);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#sozial a:hover::before {
+  opacity: 1;
+}
+
+#sozial a:hover {
+  box-shadow:
+    inset -4px -4px 10px #1a1b20,
+    inset 4px 4px 10px #00000099,
+    0 0 25px var(--color);
+  transform: translateY(-3px);
+}
+
+/* Hover-Farbe für das Icon */
 #sozial a:hover .fa-brands {
   color: var(--color);
   text-shadow: 0 0 30px var(--color);
 }
 
-/* Farben für die einzelnen Icons */
+/* Individuelle Farben */
 #sozial li:nth-child(2) {
-  --color: #1c7dd5; /* Twitter */
+  --color: #1c7dd5; /* X (Twitter) */
 }
 
 #sozial li:nth-child(3) {
@@ -47,4 +86,16 @@
 
 #sozial li:nth-child(4) {
   --color: #4cd137; /* WhatsApp */
+}
+
+/* Responsives Verhalten */
+@media (max-width: 600px) {
+  #sozial a {
+    width: 70px;
+    height: 70px;
+  }
+
+  #sozial .fa-brands {
+    font-size: 30px;
+  }
 }
