@@ -34,7 +34,7 @@
         Nach meiner Ausbildung wurde ich bei <strong>Abel &amp; Käufl</strong> als 
         <strong>Techniker im Bereich Service</strong> übernommen. In dieser Rolle bin ich für die 
         <strong>Programmierung und Konfiguration von Funkgeräten</strong> für Unternehmen und staatliche Organisationen verantwortlich.  
-        Neben der technischen Betreuung übernehme ich auch die 
+        Neben der technischen Betreuung und der Ausführung, übernehme ich auch die 
         <strong>Verwaltung der Service-Hardware</strong> und bin interner 
         Ansprechpartner für <strong>Programmiersoftware und Systemtools</strong>.  
         Auch wenn der Fokus hier weniger auf IT-Systemen liegt, kann ich mein technisches Wissen 
