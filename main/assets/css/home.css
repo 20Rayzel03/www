@@ -58,36 +58,36 @@ section {
   padding-block-end: 5rem;
 }
 /* NEU-Layout */
-section h2 {
+#contac section h2 {
   font-weight: 700;
   margin-block-end: 1rem;
 }
-.section-image {
+#contac .section-image {
   inline-size: 100%;
   block-size: 250px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.section-imgkontakt {
+#contac .section-imgkontakt {
   block-size: 250px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.section-content {
+#contac .section-content {
   padding: 20px;
   text-align: start;
 }
-.section-row {
+#contac .section-row {
   align-items: center;
   margin-block-end: 40px;
 }
-@media (max-inline-size: 768px) {
-  .section-row {
+ @media (max-inline-size: 768px) {
+  #contac .section-row {
     text-align: center;
   }
-  .section-content {
+  #contac .section-content {
     text-align: center;
   }
 }
