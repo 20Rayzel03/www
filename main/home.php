@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Startseite | Meine Webseite</title>
 
-  <link rel="stylesheet" href="assets/css/home2.css">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- Bootstrap Icons (für Icons in den Abschnitten) -->
@@ -18,6 +17,7 @@
 
   <!-- Seitenspezifisches CSS -->
   <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/home2.css">
   
 </head>
 <style>
