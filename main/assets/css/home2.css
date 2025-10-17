@@ -1,0 +1,84 @@
+@import url('https://use.fontawesome.com/release/v6.5.1/css/all.css');
+
+ul {
+    display:flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+    --color: #ff0050;
+}
+
+a {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #18191f;
+    border-radius: 15px;
+    box-shadow: 
+        -2px -2px 3px #ffffff0d,
+        3px 3px 3px #00000033;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.fa-bands {
+    font-size: 44px;
+    color: #555;
+}
+
+a:hover .fa-bands {
+    color: var(--color);
+    text-shadow: 0 0 30px var(--color);
+}
+
+li:nth-child(2) {
+    --color: #1c7dd5;
+}
+
+li:nth-child(3) {
+    --color: #d43256;
+}
+
+li:nth-child(4) {
+    --color: #4cd137;
+}
+
+
+/* NEU-Layout */
+section h2 {
+  font-weight: 700;
+  margin-block-end: 1rem;
+}
+.section-image {
+  inline-size: 100%;
+  block-size: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.section-imgkontakt {
+  block-size: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.section-content {
+  padding: 20px;
+  text-align: start;
+}
+.section-row {
+  align-items: center;
+  margin-block-end: 40px;
+}
+@media (max-inline-size: 768px) {
+  .section-row {
+    text-align: center;
+  }
+  .section-content {
+    text-align: center;
+  }
+}

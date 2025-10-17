@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Startseite | Meine Webseite</title>
 
+  <link rel="stylesheet" href="assets/css/home2.css">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- Bootstrap Icons (für Icons in den Abschnitten) -->
@@ -21,40 +22,8 @@
 </head>
 <style>
 
-/* NEU-Layout */
-section h2 {
-  font-weight: 700;
-  margin-block-end: 1rem;
-}
-.section-image {
-  inline-size: 100%;
-  block-size: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-.section-imgkontakt {
-  block-size: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-.section-content {
-  padding: 20px;
-  text-align: start;
-}
-.section-row {
-  align-items: center;
-  margin-block-end: 40px;
-}
-@media (max-inline-size: 768px) {
-  .section-row {
-    text-align: center;
-  }
-  .section-content {
-    text-align: center;
-  }
-}
+
+
 </style>
 
 <body>
@@ -122,6 +91,19 @@ section h2 {
     </div>
   </section>
 
+  <section id="sozial">
+    <ul>
+    <li><a href="#"><i class="fa-brands
+    fa-tiktok"></i></a></li>
+    <li><a href="#"><i class="fa-brands
+    fa-x-twitter"></i></a></li>
+    <li><a href="#"><i class="fa-brands
+    fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fa-brands
+    fa-whatsapp"></i></a></li>
+    </ul>
+
+  </section>
   <!-- Footer -->
   <?php include 'assets/footer.php'; ?>
 
