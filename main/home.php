@@ -18,13 +18,10 @@
   <!-- Seitenspezifisches CSS -->
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/home2.css">
+  <link rel="stylesheet" href="assets/css/sozial.css">
+
   
 </head>
-<style>
-
-
-
-</style>
 
 <body>
 
@@ -91,7 +88,7 @@
     </div>
   </section>
 
-  <section id="sozial">
+  <section id="sozial" class="text-center">
     <ul>
     <li><a href="#"><i class="fa-brands
     fa-tiktok"></i></a></li>
@@ -102,7 +99,6 @@
     <li><a href="#"><i class="fa-brands
     fa-whatsapp"></i></a></li>
     </ul>
-
   </section>
   <!-- Footer -->
   <?php include 'assets/footer.php'; ?>

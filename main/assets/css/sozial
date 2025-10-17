@@ -1,0 +1,50 @@
+@import url('https://use.fontawesome.com/release/v6.5.1/css/all.css');
+
+#sozial ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Icons mittig */
+}
+
+#sozial li {
+  list-style: none;
+  --color: #ff0050;
+}
+
+#sozial a {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background: #18191f;
+  border-radius: 15px;
+  box-shadow:
+    -2px -2px 3px #ffffff0d,
+    3px 3px 3px #00000033;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+#sozial .fa-brands {
+  font-size: 44px;
+  color: #555;
+}
+
+#sozial a:hover .fa-brands {
+  color: var(--color);
+  text-shadow: 0 0 30px var(--color);
+}
+
+/* Farben für die einzelnen Icons */
+#sozial li:nth-child(2) {
+  --color: #1c7dd5; /* Twitter */
+}
+
+#sozial li:nth-child(3) {
+  --color: #d43256; /* Instagram */
+}
+
+#sozial li:nth-child(4) {
+  --color: #4cd137; /* WhatsApp */
+}
