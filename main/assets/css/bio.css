@@ -25,9 +25,9 @@
   }
 }
 .profilbild {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgb(0 0 0 / 0.09);
-  vertical-align: middle;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
 }
