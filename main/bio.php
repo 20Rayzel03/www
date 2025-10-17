@@ -1,5 +1,7 @@
 <?php include 'assets/header.php'; ?>
 
+<link rel="stylesheet" href="assets/css/bio.css">
+
 <header>
   <h1>Über mich</h1>
 </header>

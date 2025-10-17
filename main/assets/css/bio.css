@@ -11,13 +11,6 @@
   gap: 2rem;
   align-items: center;
 }
-.bio-container img {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgb(0 0 0 / 0.09);
-  align-items: center;
-}
 .bio-container ul {
   list-style: none;
   padding: 0;
@@ -30,4 +23,11 @@
     flex-direction: column;
     padding: 1.5rem;
   }
+}
+.profilbild {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.09);
+  align-items: center;
 }
