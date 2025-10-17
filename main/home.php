@@ -18,32 +18,6 @@
   <!-- Seitenspezifisches CSS -->
   <link rel="stylesheet" href="assets/css/home.css">
   
-  <style>
-    /* Zusätzliche Styles für die neuen Abschnitte (füge das in home.css ein) */
-    .section-image {
-      inline-size: 100%;
-      block-size: 250px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .section-content {
-      padding: 20px;
-      text-align: start;
-    }
-    .section-row {
-      align-items: center;
-      margin-block-end: 40px;
-    }
-    @media (max-inline-size: 768px) {
-      .section-row {
-        text-align: center;
-      }
-      .section-content {
-        text-align: center;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -98,7 +72,7 @@
       <h2 class="mb-4">Kontakt</h2>
       <div class="row section-row justify-content-center">
         <div class="col-md-4 mb-3">
-          <img src="assets/img/real_me.png" alt="Kontakt Illustration" class="section-image img-fluid">
+          <img src="assets/img/kontakt.png" alt="Kontakt Illustration" class="section-image img-fluid">
           <!-- Alternativ: Ein Icon statt Bild, falls kein Bild verfügbar -->
           <!-- <i class="bi bi-envelope-heart display-1 text-success mb-3"></i> -->
         </div>
