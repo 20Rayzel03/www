@@ -31,7 +31,14 @@
 
       <h3>Berufserfahrung</h3>
       <p>
-
+        Nach meiner Ausbildung wurde ich bei <strong>Abel &amp; Käufl</strong> als 
+        <strong>Techniker im Bereich Service</strong> übernommen. In dieser Rolle bin ich für die 
+        <strong>Programmierung und Konfiguration von Funkgeräten</strong> für Unternehmen und staatliche Organisationen verantwortlich.  
+        Neben der technischen Betreuung übernehme ich auch die 
+        <strong>Verwaltung der Service-Hardware</strong> und bin interner 
+        Ansprechpartner für <strong>Programmiersoftware und Systemtools</strong>.  
+        Auch wenn der Fokus hier weniger auf IT-Systemen liegt, kann ich mein technisches Wissen 
+        gezielt einsetzen und weiter ausbauen.
       </p>
 
       <h3>Wie ich arbeite</h3>
@@ -46,7 +53,7 @@
         Ich lebe IT auch privat. Zu Hause betreibe ich ein <strong>Homelab</strong> mit einem
         <em>Dell PowerEdge R720xd</em> und eigenem <em>UniFi</em>-Netzwerk. Darauf laufen u. a. ein
         <strong>Windows Server 2022</strong> mit <strong>Active Directory</strong> (inkl. Synchronisierung zu
-        <strong>Microsoft 365</strong>), eine selbst gehostete <strong>Nextcloud</strong> und eine kleine Website.
+        <strong>Microsoft 365</strong>), eine selbst gehostete <strong>Nextcloud</strong> und diese kleine Website.
         So bleibe ich technisch am Ball, teste Updates und Neuerscheinungen und bringe die besten Ansätze in den Arbeitsalltag ein.
         Außerdem Fahre ich gernde Downhill, mache geräde meinen Motorad Führerschein und bin im GoKart Club in Vilsbiburg.
       </p>
