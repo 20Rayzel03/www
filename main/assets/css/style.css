@@ -222,3 +222,10 @@ footer a:hover {
     padding: 1.5rem;
   }
 }
+.profilbild {
+  border-radius: 50%;
+  align-items: center;
+  width: 200px;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
