@@ -88,7 +88,7 @@
     </div>
   </section>
 
-  <section id="sozial" class="text-center">
+  <section id="sozial">
     <ul>
     <li><a href="#"><i class="fa-brands
     fa-tiktok"></i></a></li>
