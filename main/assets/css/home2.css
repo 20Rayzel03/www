@@ -1,34 +1,34 @@
 /* NEU-Layout */
-#contac section h2 {
+section h2 {
   font-weight: 700;
   margin-block-end: 1rem;
 }
-#contac .section-image {
+.section-image {
   inline-size: 100%;
   block-size: 250px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-#contac .section-imgkontakt {
+.section-imgkontakt {
   block-size: 250px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-#contac .section-content {
+.section-content {
   padding: 20px;
   text-align: start;
 }
-#contac .section-row {
+.section-row {
   align-items: center;
   margin-block-end: 40px;
 }
  @media (max-inline-size: 768px) {
-  #contac .section-row {
+  .section-row {
     text-align: center;
   }
-  #contac .section-content {
+  .section-content {
     text-align: center;
   }
 }
