@@ -27,7 +27,7 @@
         <p>
           Wichtige Tipps, um deine Webanwendungen vor Angriffen zu schützen.
         </p>
-        <a href="login.php">🔒 Anmeldung erforderlich</a>
+        <a  href="#">Weiterlesen</a>
       </div>
     </article>
 
