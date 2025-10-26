@@ -6,7 +6,7 @@
 
   <h2>Angaben gemäß § 5 TMG</h2>
   <p>
-    <strong>Julius P</strong><br>
+    <strong>Julius Pollag</strong><br>
     Bayern / Landshut<br>
     Deutschland
   </p>

@@ -8,7 +8,7 @@
   <h2>1. Verantwortlicher</h2>
   <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
   <p>
-    <strong>JQ Pollag</strong><br>
+    <strong>Julius Pollag</strong><br>
     Bayern / Landshut<br>
     Deutschland<br>
     E-Mail: <a href="mailto:batchadmin@jqpollag.de">batchadmin@jqpollag.de</a>
