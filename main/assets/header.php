@@ -29,5 +29,5 @@
       <li><a href="blog.php">Blog</a></li>
       <li><a href="kontakt.php">Kontakt</a></li>
     </ul>
-    <a href="login.php" class="login-btn" role="button">Login</a>
+    <!-- <a href="login.php" class="login-btn" role="button">Login</a> -->
   </nav>
