@@ -74,7 +74,7 @@ nav ul li a {
   border-radius: 6px; 
   transition: background-color 0.25s ease;
 } 
-nav ul li a:hover, nav ul li a:focus, nav ul li a[aria-current="page"] { background-color: #005ea2; } 
+nav ul li a:hover, nav ul li a:focus, nav ul li a [aria-current="page"] { background-color: #005ea2; } 
 
 nav .login-btn { 
   background-color: #0078d7; 
