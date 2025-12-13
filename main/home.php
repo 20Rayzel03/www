@@ -18,7 +18,6 @@
   <!-- Seitenspezifisches CSS -->
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/home2.css">
-  <link rel="stylesheet" href="assets/css/sozial.css">
   
 </head>
 
@@ -87,14 +86,8 @@
     </div>
   </section>
 
-<section id="sozial" class="py-5 text-center">
-  <ul>
-    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-  </ul>
-</section>
+  <!-- Sozial Media -->
+  <?php include 'assets/sozial.php'; ?>
 
   <!-- Footer -->
   <?php include 'assets/footer.php'; ?>
