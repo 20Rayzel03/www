@@ -11,7 +11,7 @@
     <strong>Julius Pollag</strong><br>
     Bayern / Landshut<br>
     Deutschland<br>
-    E-Mail: <a href="mailto:batchadmin@jqpollag.de">batchadmin@jqpollag.de</a>
+    E-Mail: <a href="mailto:julius.pollag@jqpollag.de">julius.pollag@jqpollag.de</a>
   </p>
 
   <h2>2. Erhebung und Verarbeitung personenbezogener Daten</h2>

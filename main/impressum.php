@@ -13,7 +13,7 @@
 
   <h2>Kontakt</h2>
   <p>
-    E-Mail: <a href="mailto:batchadmin@jqpollag.de">batchadmin@jqpollag.de</a>
+    E-Mail: <a href="mailto:julius.pollag@jqpollag.de">julius.pollag@jqpollag.de</a>
   </p>
 
   <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
