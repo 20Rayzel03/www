@@ -75,12 +75,7 @@ nav ul li a {
   transition: background-color 0.25s ease;
   align-items: center; 
 } 
-nav ul li a:hover, 
-nav ul li a:focus, 
-nav ul li a[aria-current="page"] 
-{ background-color: #005ea2; 
-  align-items: center;
-} 
+nav ul li a:hover, nav ul li a:focus, nav ul li a[aria-current="page"] { background-color: #005ea2; } 
 
 nav .login-btn { 
   background-color: #0078d7; 
