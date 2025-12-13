@@ -39,9 +39,9 @@
       </p>
       <p>
         Mein Schwerpunkt liegt auf der Arbeit mit <strong>digitalen Alarmierungslösungen</strong>,
-        <strong>TETRA-Funksystemen (BOS und zivil)</strong>, <strong>Digital Mobile Radio (DMR)</strong> sowie
-        <strong>BOS-Inhouse-Versorgungen</strong>. Zusätzlich arbeite ich mit
-        <strong>ATEX-konformen Kommunikationssystemen</strong>.
+        <strong>TETRA-Funksystemen (BOS und zivil)</strong>, <strong>BOS-Inhouse-Versorgungen sowie
+        <strong>Digital Mobile Radio (DMR) Systemen,</strong></strong>. Teilweise arbeite ich auch mit
+        <strong>ATEX-konformen Systemen</strong>.
       </p>
       <p>
         Neben der operativen Tätigkeit unterstütze ich interne Prozesse im Serviceumfeld und fungiere als technischer
