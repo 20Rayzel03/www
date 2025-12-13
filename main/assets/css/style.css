@@ -52,16 +52,21 @@ nav {
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;   /* <-- statt space-between */
   padding: 0.8rem 1rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 0;
   z-index: 1000;
+  position: sticky;
 }
 
-nav .nav-left img {
-  height: 40px;
+/* Logo links "festnageln" */
+nav .nav-left {
+  position: absolute;
+  left: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
@@ -69,20 +74,8 @@ nav ul {
   display: flex;
   gap: 1rem;
   margin: 0;
+  padding: 0;
   align-items: center;
-}
-
-nav ul li a {
-  color: white;
-  padding: 0.4rem 0.7rem;
-  border-radius: 6px;
-  transition: background-color 0.25s ease;
-}
-
-nav ul li a:hover,
-nav ul li a:focus,
-nav ul li a[aria-current="page"] {
-  background-color: #005ea2;
 }
 
 nav .login-btn {

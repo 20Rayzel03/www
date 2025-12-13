@@ -23,7 +23,7 @@
     <div class="nav-left">
       <img src="./assets/img/logo.png" alt="Logo" height="40">
     </div>
-    <ul>
+    <ul class="nav-center">
       <li><a href="home.php">Startseite</a></li>
       <li><a href="bio.php">Bio</a></li>
       <li><a href="blog.php">Blog</a></li>
