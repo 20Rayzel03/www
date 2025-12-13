@@ -87,7 +87,7 @@
   </section>
 
   <!-- Sozial Media -->
-  <?php include 'assets/sozial.php'; ?>
+  <!-- ?php include 'assets/sozial.php'; ?> -->
 
   <!-- Footer -->
   <?php include 'assets/footer.php'; ?>
