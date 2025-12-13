@@ -56,7 +56,7 @@
       <h2 class="mb-4">Projekte</h2>
       <div class="row section-row justify-content-center">
         <div class="col-md-4 mb-3 order-md-2">
-          <img src="assets/img/real_me.png" alt="Projekte Übersicht" class="section-image img-fluid">
+          <img src="assets/img/projekt.png" alt="Projekte Übersicht" class="section-image img-fluid">
         </div>
         <div class="col-md-8 section-content order-md-1">
           <p class="lead">Ein Überblick über meine letzten Arbeiten und IT-Projekte. <i class="bi bi-code-slash text-success"></i></p>
