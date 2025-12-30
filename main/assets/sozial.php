@@ -1,8 +1,13 @@
 <?php
 // assets/sozial.php
 ?>
-<section id="sozial" class="social" aria-labelledby="social-title">
-  <div class="social-inner">
+
+<section id="sozial" class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4">Sozial Media</h2>
+  </div>
+</section>
+
     <header class="social-head">
       <h2 id="social-title">Social</h2>
       <p>Hier findest du mich – Socials, Steam & Kontakt.</p>
