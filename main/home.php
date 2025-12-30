@@ -12,6 +12,7 @@ $base = __DIR__;
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/sozial.css">
 
   <!-- Nur das, was du wirklich brauchst -->
   <link rel="stylesheet" href="assets/css/home.css">
