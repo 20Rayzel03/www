@@ -9,6 +9,7 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
   <!-- Bootstrap Icons (für Icons in den Abschnitten) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 
@@ -85,7 +86,7 @@
   </section>
 
   <!-- Sozial Media -->
-  <?php include __DIR__ . "assets/sozial.php"; ?>
+  <!-- include __DIR__ . "assets/sozial.php"; ?>-->
 
   <!-- Footer -->
   <?php include __DIR__ . "assets/footer.php"; ?>
