@@ -1,4 +1,4 @@
-<?php include 'assets/header.php'; ?>
+<?php include "assets/header.php"; ?>
 
 <!DOCTYPE html>
 <html lang="de">
@@ -23,7 +23,7 @@
 
 <body>
 
-  <!-- Masthead / Hero Section (unverändert) -->
+  <!-- Überschrift mit Bild -->
   <header class="masthead">
     <div class="overlay"></div>
     <div class="content">
@@ -33,7 +33,7 @@
     </div>
   </header>
 
-  <!-- Über mich (neu gestaltet mit Bild) -->
+  <!-- Über mich -->
   <section id="about" class="py-5 text-center">
     <div class="container">
       <h2 class="mb-4">Über mich</h2>
@@ -50,7 +50,7 @@
     </div>
   </section>
 
-  <!-- Projekte (neu gestaltet mit Bild) -->
+  <!-- Projekte -->
   <section id="projects" class="py-5 bg-light text-center">
     <div class="container">
       <h2 class="mb-4">Projekte</h2>
@@ -67,15 +67,13 @@
     </div>
   </section>
 
-  <!-- Kontakt (neu gestaltet mit Bild/Icon) -->
+  <!-- Kontakt -->
   <section id="contact" class="py-5 text-center">
     <div class="container">
       <h2 class="mb-4">Kontakt</h2>
       <div class="row section-row justify-content-center">
         <div class="col-md-4 mb-3">
           <img src="assets/img/kontakt.png" alt="Kontakt Illustration" class="section-imgkontakt img-fluid">
-          <!-- Alternativ: Ein Icon statt Bild, falls kein Bild verfügbar -->
-          <!-- <i class="bi bi-envelope-heart display-1 text-success mb-3"></i> -->
         </div>
         <div class="col-md-8 section-content">
           <p class="lead">Du möchtest mit mir in Kontakt treten? Ich freue mich über deine Nachricht. <i class="bi bi-chat-dots text-info"></i></p>
@@ -87,10 +85,11 @@
   </section>
 
   <!-- Sozial Media -->
-  <?php include 'assets/sozial.php'; ?>
+  <?php include __DIR__ . "assets/sozial.php"; ?>
+
 
   <!-- Footer -->
-  <?php include 'assets/footer.php'; ?>
+  <?php include __DIR__ . "assets/footer.php"; ?>
 
   <!-- Bootstrap JS -->
   <script src="assets/js/bootstrap.bundle.js"></script>
