@@ -1,101 +1,55 @@
-@import url('https://use.fontawesome.com/releases/v6.5.1/css/all.css');
-
-body {
-  background-color: #0f0f10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+:root{
+  --social-accent: #1f6feb;
+  --social-hover: #154bb5;
+  --icon-size: 40px;
+  --icon-bg-radius: 8px;
 }
 
-/* Section-Styling */
-#sozial ul {
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+/* Container */
+#sozial, .social { text-align:center; padding:0.75rem 0; }
+
+#sozial ul, .social-list{
+  display:flex;
+  gap:0.75rem;
+  justify-content:center;
+  align-items:center;
+  list-style:none;
+  padding:0; margin:0;
 }
 
-#sozial li {
-  list-style: none;
-  --color: #ff0050;
+#sozial li, .social-list li{ display:inline-flex; }
+
+/* Link / Icon-Box */
+#sozial a, .social-list a{
+  display:inline-flex;
+  width:var(--icon-size);
+  height:var(--icon-size);
+  align-items:center;
+  justify-content:center;
+  color:var(--social-accent);
+  text-decoration:none;
+  border-radius:var(--icon-bg-radius);
+  background:transparent;
+  transition:background .12s ease, color .12s ease, transform .12s ease;
 }
 
-/* Grund-Button-Design */
-#sozial a {
-  display: flex;
-  width: 100px;
-  height: 100px;
-  background: #18191f;
-  border-radius: 15px;
-  box-shadow:
-    -6px -6px 10px #1a1b20,
-    6px 6px 10px #00000099;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
+#sozial a svg, .social-list a svg{ width:60%; height:60%; display:block; fill:currentColor; }
+
+#sozial a:hover, #sozial a:focus, .social-list a:hover, .social-list a:focus{
+  color:#fff;
+  background:var(--social-accent);
+  transform:translateY(-3px);
+  outline:none;
 }
 
-/* Icons */
-#sozial .fa-brands {
-  font-size: 44px;
-  color: #555;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+#sozial a:focus-visible, .social-list a:focus-visible{
+  box-shadow:0 0 0 3px rgba(31,111,235,0.18);
+  border-radius:var(--icon-bg-radius);
 }
 
-/* Glow / Licht-Effekt beim Hover */
-#sozial a::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(145deg, #ffffff20, #00000010);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
+/* Responsive */
+@media (max-width:420px){ :root{ --icon-size:36px; } #sozial ul, .social-list{ gap:0.5rem; } }
 
-#sozial a:hover::before {
-  opacity: 1;
-}
+@media (prefers-reduced-motion:reduce){ #sozial a, .social-list a{ transition:none; transform:none; } }
 
-#sozial a:hover {
-  box-shadow:
-    inset -4px -4px 10px #1a1b20,
-    inset 4px 4px 10px #00000099,
-    0 0 25px var(--color);
-  transform: translateY(-3px);
-}
-
-/* Hover-Farbe für das Icon */
-#sozial a:hover .fa-brands {
-  color: var(--color);
-  text-shadow: 0 0 30px var(--color);
-}
-
-/* Individuelle Farben */
-#sozial li:nth-child(2) {
-  --color: #1c7dd5; /* X (Twitter) */
-}
-
-#sozial li:nth-child(3) {
-  --color: #d43256; /* Instagram */
-}
-
-#sozial li:nth-child(4) {
-  --color: #4cd137; /* WhatsApp */
-}
-
-/* Responsives Verhalten */
-@media (max-width: 600px) {
-  #sozial a {
-    width: 70px;
-    height: 70px;
-  }
-
-  #sozial .fa-brands {
-    font-size: 30px;
-  }
-}
+@media (max-width:320px){ #sozial ul, .social-list{ flex-wrap:wrap; gap:0.4rem; } }
