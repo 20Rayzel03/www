@@ -87,7 +87,6 @@
   <!-- Sozial Media -->
   <?php include __DIR__ . "assets/sozial.php"; ?>
 
-
   <!-- Footer -->
   <?php include __DIR__ . "assets/footer.php"; ?>
 
