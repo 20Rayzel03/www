@@ -1,12 +1,19 @@
-  <footer>
-    <div>
-      <a href="impressum.php">Impressum</a> | 
-      <a href="datenschutz.php">Datenschutz</a>
-    </div>
-    <div>© <?= date("Y") ?> Alle Rechte vorbehalten.</div>
-  </footer>
+<?php
+// assets/footer.php
+?>
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="impressum.php">Impressum</a> |
+    <a href="datenschutz.php">Datenschutz</a>
+  </div>
+
+  <div class="footer-copy">
+    © <?= date("Y") ?> Alle Rechte vorbehalten.
+  </div>
+</footer>
+
 <!-- Cookie-Hinweis -->
-<div id="cookie-banner" class="cookie-banner">
+<div id="cookie-banner" class="cookie-banner" hidden>
   <p>
     Diese Website verwendet Cookies, um dir das bestmögliche Erlebnis zu bieten.
     <a href="datenschutz.php">Mehr erfahren</a>
@@ -15,21 +22,17 @@
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const banner = document.getElementById("cookie-banner");
-    const acceptBtn = document.getElementById("cookie-accept");
-    const cookieAccepted = localStorage.getItem("cookieAccepted");
+document.addEventListener("DOMContentLoaded", function () {
+  const banner = document.getElementById("cookie-banner");
+  const acceptBtn = document.getElementById("cookie-accept");
 
-    if (!cookieAccepted) {
-      banner.style.display = "flex";
-    }
+  if (!localStorage.getItem("cookieAccepted")) {
+    banner.hidden = false;
+  }
 
-    acceptBtn.addEventListener("click", function() {
-      localStorage.setItem("cookieAccepted", "true");
-      banner.style.display = "none";
-    });
+  acceptBtn.addEventListener("click", function () {
+    localStorage.setItem("cookieAccepted", "true");
+    banner.hidden = true;
   });
+});
 </script>
-
-</body>
-</html>

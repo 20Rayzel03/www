@@ -1,30 +1,27 @@
-<?php include "assets/header.php"; ?>
+<?php
+$base = __DIR__;
+?>
 
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Startseite | Meine Webseite</title>
+  <title>Startseite</title>
 
-  <!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-  <!-- Bootstrap Icons (für Icons in den Abschnitten) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-
-  <!-- Hauptdesign -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Seitenspezifisches CSS -->
+  <!-- Nur das, was du wirklich brauchst -->
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/home2.css">
-  
 </head>
 
 <body>
 
-  <!-- Überschrift mit Bild -->
+  <?php include $base . '/assets/header.php'; ?>
+
   <header class="masthead">
     <div class="overlay"></div>
     <div class="content">
@@ -85,13 +82,9 @@
     </div>
   </section>
 
-  <!-- Sozial Media -->
-  <!-- include __DIR__ . "assets/sozial.php"; ?>-->
+  <?php include $base . '/assets/sozial.php'; ?>
+  <?php include $base . '/assets/footer.php'; ?>
 
-  <!-- Footer -->
-  <?php include __DIR__ . "assets/footer.php"; ?>
-
-  <!-- Bootstrap JS -->
   <script src="assets/js/bootstrap.bundle.js"></script>
 
 </body>
