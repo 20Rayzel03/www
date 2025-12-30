@@ -26,7 +26,7 @@ $base = __DIR__;
   <header class="masthead">
     <div class="overlay"></div>
     <div class="content">
-      <h1>Willkommen auf JQPOLLAG.DE</h1>
+      <h1>JQPOLLAG.DE</h1>
       <p>Schön, dass du hier bist – entdecke mehr über mich, meine Erlebnisse und Projekte.</p>
       <a href="bio.php" class="btn btn-primary">Über mich</a>
     </div>
