@@ -14,9 +14,8 @@ $base = __DIR__;
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/sozial.css">
 
-  <!-- Nur das, was du wirklich brauchst -->
   <link rel="stylesheet" href="assets/css/home.css">
-  <link rel="stylesheet" href="assets/css/home2.css">
+  
 </head>
 
 <body>
