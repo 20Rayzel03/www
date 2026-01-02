@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <header>  
   <link rel="stylesheet" href="assets/css/kontakt.css">
 
-  <h1> Responsive Material Design Form 
-  <small>Material Design delivers a cleaner and flatter user interface</small>
+  <h1> Nim mit mir Kontakt auf
+  <small>Gib mir etwas zeit zu antworten</small>
 </h1>
 </header>
 
@@ -74,14 +74,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   </form>
 </section>
 
-<!-- follow me template 
+<!-- follow me template -->
 <div class="made-with-love">
-    Made with 
-    <i>♥</i> by 
-    <a target="_blank" href="https://codepen.io/nikhil8krishnan">Nikhil Krishnan</a>
+    <p>Das ich die nachtichten lesen werde, ist nicht garantiert</p>
   </div>
 </main>
--->
 
 <script src="assets/js/kontakt.js"></script>
 <?php include 'assets/footer.php'; ?>
