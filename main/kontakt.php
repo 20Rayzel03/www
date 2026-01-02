@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 
 <header>  
-  <link rel="stylesheet" href="assets/css/kontakt.css">
+  <link rel="stylesheet" href="assets/css/kontakt.scss">
 
   <h1> Nim mit mir Kontakt auf
   <small>Gib mir etwas zeit zu antworten</small>
@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <!-- follow me template -->
 <div class="made-with-love">
-    <p>Das ich die nachtichten lesen werde, ist nicht garantiert</p>
+    <p>Das ich die nachtichten lesen werde, ist nicht garantiert.</p>
   </div>
 </main>
 
