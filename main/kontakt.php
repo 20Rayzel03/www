@@ -6,13 +6,14 @@ $success = false;
 $error = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $name = trim($_POST["name"]);
+    $fname = trim($_POST["first-name"]);
+    $lname = trim($_POST["last-name"]);
     $email = trim($_POST["email"]);
-    $message = trim($_POST["message"]);
+    $message = trim($_POST["message-subject"]);
 
-    if ($name && $email && $message) {
-        $stmt = $conn->prepare("INSERT INTO kontaktanfragen (name, email, nachricht) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $name, $email, $message);
+    if ($fname && $lname && $email && $message) {
+        $stmt = $conn->prepare("INSERT INTO kontaktanfragen (fname, lname, email, message) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("sss", $$fname, $lname, $email, $message);
 
         if ($stmt->execute()) {
             $success = true;
@@ -26,39 +27,61 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 
-<header>
+<header>  
   <link rel="stylesheet" href="assets/css/kontakt.css">
 
-  <h1>Kontakt</h1>
-  <p>Schreibe mir gerne eine Nachricht über das Formular.</p>
+  <h1> Responsive Material Design Form 
+  <small>Material Design delivers a cleaner and flatter user interface</small>
+</h1>
 </header>
 
 <main>
-  <section class="container">
-    <?php if ($success): ?>
-      <div class="form-message success">
-       ✅ Vielen Dank für deine Nachricht! Ich melde mich bald bei dir.
-     </div>
-    <?php elseif ($error): ?>
-      <div class="form-message error">
-        ❌ <?= htmlspecialchars($error) ?>
-     </div>
-    <?php endif; ?>
+<section class="contact-wrap">
+  <form action="" class="contact-form">
+    <div class="col-sm-6">
+      <div class="input-block">
+        <label for="">First Name</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="input-block">
+        <label for="">Last Name</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="input-block">
+        <label for="">Email</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="input-block">
+        <label for="">Message Subject</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="input-block textarea">
+        <label for="">Drop your message here</label>
+        <textarea rows="3" type="text" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <button class="square-button">Send</button>
+    </div>
+  </form>
+</section>
 
-
-    <form class="contact-form" action="kontakt.php" method="post">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">E-Mail</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Nachricht</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
-
-      <button type="submit" class="btn-center">Absenden</button>
-    </form>
-  </section>
+<!-- follow me template 
+<div class="made-with-love">
+    Made with 
+    <i>♥</i> by 
+    <a target="_blank" href="https://codepen.io/nikhil8krishnan">Nikhil Krishnan</a>
+  </div>
 </main>
+-->
 
+<script src="assets/js/kontakt.js"></script>
 <?php include 'assets/footer.php'; ?>
