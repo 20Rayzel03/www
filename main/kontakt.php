@@ -27,6 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 
 <header>
+  <link rel="stylesheet" href="assets/css/kontakt.css">
+
   <h1>Kontakt</h1>
   <p>Schreibe mir gerne eine Nachricht über das Formular.</p>
 </header>
