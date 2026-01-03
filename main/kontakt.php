@@ -36,11 +36,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <section class="contact-wrap">
 
     <?php if ($success): ?>
-      <p style="padding:10px;background:#d4edda;border:1px solid #c3e6cb;">
+      <p style="padding:10px;background:#d4edda;border:1px solid #89be95ff;">
         Nachricht wurde gesendet ✅
       </p>
     <?php elseif ($error): ?>
-      <p style="padding:10px;background:#f8d7da;border:1px solid #f5c6cb;">
+      <p style="padding:10px;background:#f8d7da;border:1px solid #b72e3cff;">
         <?= htmlspecialchars($error) ?>
       </p>
     <?php endif; ?>
