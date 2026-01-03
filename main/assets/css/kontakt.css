@@ -1,170 +1,7 @@
 /* import font from google */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900");
-
-/* ---- page styles ---- */
-body{
-  background: #f4f6f8;
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Container als Card */
-.contact-wrap{
-  max-width: 720px;
-  margin: 60px auto;
-  padding: 40px;
-
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
-}
-
-/* Headline */
-h1{
-  background: none;
-  color: #111827;
-  padding: 0;
-  margin: 0 0 30px;
-  font-size: 28px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-}
-
-h1 small{
-  font-size: 16px;
-  display: block;
-  text-transform: none;
-  font-weight: 400;
-  margin-top: 10px;
-  color: #6b7280;
-}
-
-/* contact form */
-.contact-form{
-  margin-top: 30px;
-}
-
-/* Input Blocks */
-.contact-form .input-block{
-  background-color: #f9fafb;
-  border: 1px solid #d1d5db;
-  width: 100%;
-  min-height: 60px;
-  padding: 18px 20px;
-  position: relative;
-  margin-bottom: 18px;
-  transition: border-color 0.25s ease, background 0.25s ease;
-  box-sizing: border-box;
-  border-radius: 12px;
-}
-
-/* Fokus */
-.contact-form .input-block:focus-within{
-  background-color: #ffffff;
-  border-color: #3b82f6;
-}
-
-/* Textarea */
-.contact-form .input-block.textarea{
-  height: auto;
-}
-
-.contact-form .input-block.textarea .form-control{
-  height: auto;
-  resize: none;
-}
-
-/* Labels */
-.contact-form .input-block label{
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  margin: 0;
-  font-weight: 400;
-  z-index: 1;
-  color: #6b7280;
-  font-size: 15px;
-  line-height: 14px;
-  transition: all 0.2s ease;
-}
-
-/* Inputs */
-.contact-form .input-block .form-control{
-  background-color: transparent;
-  padding: 0;
-  border: none;
-  outline: none;
-  height: auto;
-  position: relative;
-  z-index: 2;
-  font-size: 16px;
-  color: #111827;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Floating label */
-.contact-form .input-block:focus-within label{
-  top: 8px;
-  font-size: 12px;
-  color: #3b82f6;
-}
-
-/* Button */
-.contact-form .square-button{
-  background-color: #111827;
-  color: #ffffff;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-
-  border-radius: 14px;
-  transition: transform 0.15s ease, background 0.2s ease;
-  padding: 0 60px;
-  height: 56px;
-  border: none;
-  width: 100%;
-  cursor: pointer;
-}
-
-.contact-form .square-button:hover,
-.contact-form .square-button:focus{
-  background-color: #1f2937;
-  transform: translateY(-1px);
-}
-
-/* tablet and above devices */
-@media (min-width: 768px) { 
-  .contact-wrap{
-    width: 100%;
-  }
-}
-
-/* follow me template */
-.made-with-love{
-  margin-top: 24px;
-  padding: 10px;
-  text-align: center;
-  font-size: 12px;
-  font-family: arial;
-  color: #6b7280;
-}
-
-.made-with-love a{
-  color: #6b7280;
-  text-decoration: none;
-}
-
-.made-with-love a:hover{
-  text-decoration: underline;
-}
-
-
-/* import font from google 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900");
 
-/* ---- page styles ---- 
+/* ---- page styles ---- */
 body{
   background: linear-gradient(to right, #ffffff, #757273);
   font-family: 'Roboto', sans-serif;
@@ -176,7 +13,7 @@ body{
 
 h1{
   background-color: white;
-  color: #ff6a4d; /* lighten(#FF512F, ~10%) 
+  color: #ff6a4d; /* lighten(#FF512F, ~10%) */
   padding: 40px;
   margin: 0 0 50px;
   font-size: 30px;
@@ -194,7 +31,7 @@ h1 small{
   color: #ff6a4d;
 }
 
-/* contact form 
+/* contact form */
 .contact-form{
   margin-top: 30px;
 }
@@ -203,7 +40,7 @@ h1 small{
   background-color: rgba(255,255,255,.8);
   border: solid 1px #FF512F;
   width: 100%;
-  min-height: 60px;        /* besser als feste height 
+  min-height: 60px;        /* besser als feste height */
   padding: 25px;
   position: relative;
   margin-bottom: 20px;
@@ -213,7 +50,7 @@ h1 small{
 
 .contact-form .input-block.focus{
   background-color: #fff;
-  border: solid 1px #ff2d07; /* darken(#FF512F, ~10%) 
+  border: solid 1px #ff2d07; /* darken(#FF512F, ~10%) */
 }
 
 .contact-form .input-block.textarea{
@@ -236,7 +73,7 @@ h1 small{
   color: #333;
   font-size: 18px;
   line-height: 10px;
-  transition: all 0.2s ease; /* hilft beim „floating label“ 
+  transition: all 0.2s ease; /* hilft beim „floating label“ */
 }
 
 .contact-form .input-block .form-control{
@@ -258,6 +95,7 @@ h1 small{
 /* ❗ Fix: label kann nicht "inside :focus" von input verschachtelt werden.
    Stattdessen: input:focus + label oder input:focus ~ label – je nach HTML-Reihenfolge.
    Standardfall: <input class="form-control" ...><label>..</label>
+*/
 
 .contact-form .input-block .form-control:focus + label,
 .contact-form .input-block .form-control:not(:placeholder-shown) + label{
@@ -269,6 +107,7 @@ h1 small{
 /* Falls dein Label VOR dem Input steht (häufiger Bootstrap):
    <label>..</label><input ...>
    dann nutze diese Variante (und die beiden oben kannst du löschen):
+*/
 
 .contact-form .input-block:focus-within label{
   top: 8px;
@@ -278,7 +117,7 @@ h1 small{
 
 .contact-form .square-button{
   background-color: rgba(255,255,255,.8);
-  color: #ff2d07; /* darken(#FF512F, ~10%) 
+  color: #ff2d07; /* darken(#FF512F, ~10%) */
   font-size: 26px;
   text-transform: uppercase;
   font-weight: 700;
@@ -297,7 +136,7 @@ h1 small{
   background-color: #fff;
 }
 
-/* tablet and above devices 
+/* tablet and above devices */
 @media (min-width: 768px) { 
   .contact-wrap{
     width: 60%;
@@ -305,7 +144,7 @@ h1 small{
   }
 }
 
-/* follow me template 
+/* follow me template */
 .made-with-love{
   margin-top: 40px;
   padding: 10px;
@@ -333,4 +172,3 @@ h1 small{
   text-decoration: underline;
 }
 
-*/
