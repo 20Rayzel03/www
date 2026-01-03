@@ -1,5 +1,5 @@
 <?php
-// assets/header.php
+
 ?>
 <nav class="main-nav" role="navigation" aria-label="Hauptnavigation">
   <div class="nav-left">

@@ -10,7 +10,6 @@ $base = __DIR__;
   <title>Startseite</title>
 
   <link rel="stylesheet" href="assets/css/head-foot.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/head-foot.css') ?>">
-  <link rel="stylesheet" href="assets/css/style.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/style.css') ?>">
   <link rel="stylesheet" href="assets/css/home.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/home.css') ?>">
 
 </head>
