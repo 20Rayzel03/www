@@ -3,7 +3,7 @@
 
 /* ---- page styles ---- */
 body{
-  background: linear-gradient(to right, #ffffff, #757273);
+  background: linear-gradient(to right, #f3f4f6, #e5e7eb);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -12,8 +12,8 @@ body{
 }
 
 h1{
-  background-color: white;
-  color: #ff6a4d; /* lighten(#FF512F, ~10%) */
+  background-color: #ffffff;
+  color: #111827;
   padding: 40px;
   margin: 0 0 50px;
   font-size: 30px;
@@ -28,7 +28,7 @@ h1 small{
   text-transform: none;
   font-weight: 300;
   margin-top: 10px;
-  color: #ff6a4d;
+  color: #6b7280;
 }
 
 /* contact form */
@@ -37,10 +37,10 @@ h1 small{
 }
 
 .contact-form .input-block{
-  background-color: rgba(255,255,255,.8);
-  border: solid 1px #FF512F;
+  background-color: #ffffff;
+  border: solid 1px #d1d5db;
   width: 100%;
-  min-height: 60px;        /* besser als feste height */
+  min-height: 60px;
   padding: 25px;
   position: relative;
   margin-bottom: 20px;
@@ -49,8 +49,8 @@ h1 small{
 }
 
 .contact-form .input-block.focus{
-  background-color: #fff;
-  border: solid 1px #ff2d07; /* darken(#FF512F, ~10%) */
+  background-color: #ffffff;
+  border: solid 1px #9ca3af;
 }
 
 .contact-form .input-block.textarea{
@@ -70,10 +70,10 @@ h1 small{
   margin: 0;
   font-weight: 300;
   z-index: 1;
-  color: #333;
+  color: #6b7280;
   font-size: 18px;
   line-height: 10px;
-  transition: all 0.2s ease; /* hilft beim „floating label“ */
+  transition: all 0.2s ease;
 }
 
 .contact-form .input-block .form-control{
@@ -87,37 +87,22 @@ h1 small{
   position: relative;
   z-index: 2;
   font-size: 18px;
-  color: #333;
+  color: #111827;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* ❗ Fix: label kann nicht "inside :focus" von input verschachtelt werden.
-   Stattdessen: input:focus + label oder input:focus ~ label – je nach HTML-Reihenfolge.
-   Standardfall: <input class="form-control" ...><label>..</label>
-*/
-
-.contact-form .input-block .form-control:focus + label,
-.contact-form .input-block .form-control:not(:placeholder-shown) + label{
-  top: 8px;
-  font-size: 12px;
-  line-height: 12px;
-}
-
-/* Falls dein Label VOR dem Input steht (häufiger Bootstrap):
-   <label>..</label><input ...>
-   dann nutze diese Variante (und die beiden oben kannst du löschen):
-*/
-
+/* Floating label */
 .contact-form .input-block:focus-within label{
   top: 8px;
   font-size: 12px;
   line-height: 12px;
+  color: #111827;
 }
 
 .contact-form .square-button{
-  background-color: rgba(255,255,255,.8);
-  color: #ff2d07; /* darken(#FF512F, ~10%) */
+  background-color: #ffffff;
+  color: #111827;
   font-size: 26px;
   text-transform: uppercase;
   font-weight: 700;
@@ -126,14 +111,14 @@ h1 small{
   transition: all 0.3s ease;
   padding: 0 60px;
   height: 60px;
-  border: none;
+  border: solid 1px #d1d5db;
   width: 100%;
   cursor: pointer;
 }
 
 .contact-form .square-button:hover,
 .contact-form .square-button:focus{
-  background-color: #fff;
+  background-color: #f3f4f6;
 }
 
 /* tablet and above devices */
@@ -152,23 +137,14 @@ h1 small{
   text-align: center;
   font-size: 10px;
   font-family: arial;
-  color: #fff;
-}
-
-.made-with-love i{
-  font-style: normal;
-  color: #F50057;
-  font-size: 14px;
-  position: relative;
-  top: 2px;
+  color: #6b7280;
 }
 
 .made-with-love a{
-  color: #fff;
+  color: #6b7280;
   text-decoration: none;
 }
 
 .made-with-love a:hover{
   text-decoration: underline;
 }
-
