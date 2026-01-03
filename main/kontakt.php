@@ -6,14 +6,15 @@ $success = false;
 $error = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $fname = trim($_POST["first-name"]);
-    $lname = trim($_POST["last-name"]);
-    $email = trim($_POST["email"]);
-    $message = trim($_POST["message-subject"]);
+    $fname   = trim($_POST["first-name"] ?? "");
+    $lname   = trim($_POST["last-name"] ?? "");
+    $email   = trim($_POST["email"] ?? "");
+    $subject = trim($_POST["message-subject"] ?? "");
+    $message = trim($_POST["message"] ?? "");
 
-    if ($fname && $lname && $email && $message) {
-        $stmt = $conn->prepare("INSERT INTO kontaktanfragen (fname, lname, email, message) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("sss", $$fname, $lname, $email, $message);
+    if ($fname && $lname && $email && $subject && $message) {
+        $stmt = $conn->prepare("INSERT INTO kontaktanfragen (fname, lname, email, subject, message) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssss", $fname, $lname, $email, $subject, $message);
 
         if ($stmt->execute()) {
             $success = true;
@@ -27,56 +28,70 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 
-<link rel="stylesheet" href="assets/css/kontakt.scss">
+<link rel="stylesheet" href="/assets/css/kontakt.css?v=2">
 
-<header>  
-  <h1> Nim mit mir Kontakt auf
-  <small>Gib mir etwas zeit zu antworten</small>
-</h1>
-</header>
 
 <main>
-<section class="contact-wrap">
-  <form action="" class="contact-form">
-    <div class="col-sm-6">
-      <div class="input-block">
-        <label for="">First Name</label>
-        <input type="text" class="form-control">
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="input-block">
-        <label for="">Last Name</label>
-        <input type="text" class="form-control">
-      </div>
-    </div>
-    <div class="col-sm-12">
-      <div class="input-block">
-        <label for="">Email</label>
-        <input type="text" class="form-control">
-      </div>
-    </div>
-    <div class="col-sm-12">
-      <div class="input-block">
-        <label for="">Message Subject</label>
-        <input type="text" class="form-control">
-      </div>
-    </div>
-    <div class="col-sm-12">
-      <div class="input-block textarea">
-        <label for="">Drop your message here</label>
-        <textarea rows="3" type="text" class="form-control"></textarea>
-      </div>
-    </div>
-    <div class="col-sm-12">
-      <button class="square-button">Send</button>
-    </div>
-  </form>
-</section>
+  <section class="contact-wrap">
 
-<!-- follow me template -->
-<div class="made-with-love">
-    <p>Das ich die nachtichten lesen werde, ist nicht garantiert.</p>
+    <?php if ($success): ?>
+      <p style="padding:10px;background:#d4edda;border:1px solid #c3e6cb;">
+        Nachricht wurde gesendet ✅
+      </p>
+    <?php elseif ($error): ?>
+      <p style="padding:10px;background:#f8d7da;border:1px solid #f5c6cb;">
+        <?= htmlspecialchars($error) ?>
+      </p>
+    <?php endif; ?>
+
+    <h1>Nimm mit mir Kontakt auf
+      <small>Gib mir etwas Zeit zu antworten</small>
+    </h1>
+
+    <form action="" method="post" class="contact-form">
+      <div class="col-sm-6">
+        <div class="input-block">
+          <label for="first-name">First Name</label>
+          <input id="first-name" name="first-name" type="text" class="form-control" value="<?= htmlspecialchars($_POST["first-name"] ?? "") ?>">
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="input-block">
+          <label for="last-name">Last Name</label>
+          <input id="last-name" name="last-name" type="text" class="form-control" value="<?= htmlspecialchars($_POST["last-name"] ?? "") ?>">
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <div class="input-block">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" class="form-control" value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <div class="input-block">
+          <label for="message-subject">Message Subject</label>
+          <input id="message-subject" name="message-subject" type="text" class="form-control" value="<?= htmlspecialchars($_POST["message-subject"] ?? "") ?>">
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <div class="input-block textarea">
+          <label for="message">Drop your message here</label>
+          <textarea id="message" name="message" rows="3" class="form-control"><?= htmlspecialchars($_POST["message"] ?? "") ?></textarea>
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <button type="submit" class="square-button">Send</button>
+      </div>
+    </form>
+  </section>
+
+  <div class="made-with-love">
+    <p>Dass ich die Nachrichten lesen werde, ist nicht garantiert.</p>
   </div>
 </main>
 
