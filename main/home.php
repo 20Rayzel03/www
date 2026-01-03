@@ -8,14 +8,11 @@ $base = __DIR__;
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Startseite</title>
-
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/sozial.css">
-
-  <link rel="stylesheet" href="assets/css/home.css">
   
+  <link rel="stylesheet" href="assets/css/style.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/style.css') ?>">
+  <link rel="stylesheet" href="assets/css/home.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/home.css') ?>">
+  <link rel="stylesheet" href="assets/css/sozial.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/sozial.css') ?>">
+
 </head>
 
 <body>

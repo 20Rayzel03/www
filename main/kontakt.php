@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 
-<link rel="stylesheet" href="/assets/css/kontakt.css?v=2">
+<link rel="stylesheet" href="/assets/css/kontakt.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/kontakt.css') ?>">
 
 
 <main>
