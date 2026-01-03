@@ -1,3 +1,10 @@
 {
-    "chatgpt.openOnStartup": true
+  "chatgpt.openOnStartup": true,
+  "phpserver.browser": "",
+
+  "php.validate.executablePath": "/usr/bin/php",
+  "phpserver.phpPath": "/usr/bin/php",
+  "phpServer.phpPath": "/usr/bin/php",
+
+  "css.customData": []
 }
