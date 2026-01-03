@@ -10,6 +10,8 @@ if (!isset($_SESSION['user_id'])) {
 
 <?php include 'assets/header.php'; ?>
 
+<link rel="stylesheet" href="assets/css/head-foot.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/head-foot.css') ?>">
+
 <header>
   <h1>Dashboard</h1>
 </header>

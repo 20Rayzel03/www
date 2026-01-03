@@ -1,5 +1,8 @@
 <?php include 'assets/header.php'; ?>
 
+<link rel="stylesheet" href="assets/css/head-foot.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/head-foot.css') ?>">
+<link rel="stylesheet" href="assets/css/blog.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/blog.css') ?>">
+
 <header>
   <h1>Blog</h1>
   <p>Hier findest du spannende Artikel rund um IT, Server & Webentwicklung.</p>

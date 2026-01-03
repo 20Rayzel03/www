@@ -1,5 +1,6 @@
 <?php include 'assets/header.php'; ?>
 
+<link rel="stylesheet" href="assets/css/head-foot.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/head-foot.css') ?>">
 <link rel="stylesheet" href="assets/css/bio.css">
 
 <header>
