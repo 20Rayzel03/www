@@ -13,7 +13,7 @@ body{
 
 h1{
   background-color: white;
-  color: #ff6a4d; /* lighten(#FF512F, ~10%) */
+  color: #000000; /* lighten(#FF512F, ~10%) */
   padding: 40px;
   margin: 0 0 50px;
   font-size: 30px;
@@ -28,7 +28,7 @@ h1 small{
   text-transform: none;
   font-weight: 300;
   margin-top: 10px;
-  color: #ff6a4d;
+  color: #1d1d1d;
 }
 
 /* contact form */
@@ -38,7 +38,7 @@ h1 small{
 
 .contact-form .input-block{
   background-color: rgba(255,255,255,.8);
-  border: solid 1px #FF512F;
+  border: solid 1px #2c2c2c;
   width: 100%;
   min-height: 60px;        /* besser als feste height */
   padding: 25px;
@@ -50,7 +50,7 @@ h1 small{
 
 .contact-form .input-block.focus{
   background-color: #fff;
-  border: solid 1px #ff2d07; /* darken(#FF512F, ~10%) */
+  border: solid 1px #2c2c2c; /* darken(#FF512F, ~10%) */
 }
 
 .contact-form .input-block.textarea{
@@ -117,7 +117,7 @@ h1 small{
 
 .contact-form .square-button{
   background-color: rgba(255,255,255,.8);
-  color: #ff2d07; /* darken(#FF512F, ~10%) */
+  color: #2c2c2c; /* darken(#FF512F, ~10%) */
   font-size: 26px;
   text-transform: uppercase;
   font-weight: 700;
@@ -157,7 +157,7 @@ h1 small{
 
 .made-with-love i{
   font-style: normal;
-  color: #F50057;
+  color: #2c2c2c;
   font-size: 14px;
   position: relative;
   top: 2px;

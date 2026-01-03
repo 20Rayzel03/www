@@ -1,12 +1,14 @@
 <?php
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
 $host = "localhost";
-$user = "webuser";     
-$pass = "9oo*nlqoLZ2u!w3QO@vk"; 
-$dbname = "jqpollag"; 
+$user = "webuser";
+$pass = "9oo*nlqoLZ2u!w3QO@vk";
+$dbname = "jqpollag";
 
-$conn = new mysqli($host, $user, $pass, $dbname);
-
-if ($conn->connect_error) {
-    die("Verbindung fehlgeschlagen: " . $conn->connect_error);
+try {
+    $conn = new mysqli($host, $user, $pass, $dbname);
+    $conn->set_charset("utf8mb4");
+} catch (mysqli_sql_exception $e) {
+    die("DB-Verbindung fehlgeschlagen: " . $e->getMessage());
 }
-?>
