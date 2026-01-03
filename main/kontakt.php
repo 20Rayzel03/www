@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         Nachricht wurde gesendet ✅
       </p>
     <?php elseif ($error): ?>
-      <p style="padding:10px;background:#f8d7da;border:1px solid #b72e3cff;">
+      <p style="padding:10px;background:#d62837;border:1px solid #ff0019ff;">
         <?= htmlspecialchars($error) ?>
       </p>
     <?php endif; ?>
