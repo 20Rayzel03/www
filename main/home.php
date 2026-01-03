@@ -11,6 +11,8 @@ $base = __DIR__;
 
   <link rel="stylesheet" href="assets/css/head-foot.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/head-foot.css') ?>">
   <link rel="stylesheet" href="assets/css/home.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/home.css') ?>">
+  <link rel="stylesheet" href="assets/css/style.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/style.css') ?>">
+
 
 </head>
 
