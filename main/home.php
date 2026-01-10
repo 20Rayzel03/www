@@ -31,14 +31,12 @@ $base = __DIR__;
   <!-- Über mich -->
   <section id="about" class="py-5 text-center">
     <div class="container">
-      <h2 class="mb-4">Über mich</h2>
-
       <div class="home-split">
         <div class="home-split__media">
           <img src="assets/img/real_me.png" alt="Profilbild" class="section-image img-fluid">
         </div>
-
         <div class="home-split__content">
+          <h2 class="mb-4">Über mich</h2>
           <p class="lead">Ich bin ein IT-Enthusiast mit Schwerpunkt auf Servermanagement, Support und Linux/Windows-Systemen.</p>
           <p>Hier erfährst du mehr über meine Leidenschaft für Technologie und meine berufliche Reise.</p>
           <a href="bio.php" class="btn btn-success">Mehr erfahren</a>
@@ -50,14 +48,12 @@ $base = __DIR__;
   <!-- Projekte -->
   <section id="projects" class="py-5 bg-light text-center">
     <div class="container">
-      <h2 class="mb-4">Projekte</h2>
-
       <div class="home-split home-split--reverse">
         <div class="home-split__media">
           <img src="assets/img/projekt-v2.png" alt="Projekte Übersicht" class="section-image img-fluid">
         </div>
-
         <div class="home-split__content">
+          <h2 class="mb-4">Projekte</h2>
           <p class="lead">Ein Überblick über meine letzten Arbeiten und IT-Projekte.</p>
           <p>Entdecke, wie ich Server optimiert, Apps entwickelt und Systeme gesichert habe.</p>
           <a href="blog.php" class="btn btn-success">Zum Blog</a>
@@ -69,14 +65,12 @@ $base = __DIR__;
   <!-- Kontakt -->
   <section id="contact" class="py-5 text-center">
     <div class="container">
-      <h2 class="mb-4">Kontakt</h2>
-
       <div class="home-split">
         <div class="home-split__media">
           <img src="assets/img/kontakt.png" alt="Kontakt Illustration" class="section-imgkontakt img-fluid">
         </div>
-
         <div class="home-split__content">
+          <h2 class="mb-4">Kontakt</h2>
           <p class="lead">Du möchtest mit mir in Kontakt treten? Ich freue mich über deine Nachricht.</p>
           <p>Lass uns über IT-Themen, Projekte und weiteres sprechen.</p>
           <a href="kontakt.php" class="btn btn-success">Kontakt aufnehmen</a>
