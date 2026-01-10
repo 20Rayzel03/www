@@ -1,142 +1,191 @@
-/* =========================================
-   home.css – Startseite
-   Ziele:
-   - Desktop: saubere 2-Spalten-Sections (abwechselnd Bild/Text)
-   - Mobile: gestapelt, mittig, gut lesbar
-   - Buttons: überall wie Kontakt (grün + weiße Schrift)
-   - Header: gokart.jpg als Hintergrund
-========================================= */
+/* ==========================================================
+   Home Page – responsive (PC + Handy)
+   Hinweis: Alles ist auf .home-page gescoped, damit nichts
+   andere Seiten kaputt macht.
+========================================================== */
+
+.home-page{
+  /* Falls irgendwo alte Regeln noch reinfunken */
+  background: transparent;
+}
+
+/* ---------- Mini-Utilities (falls kein Bootstrap-CSS geladen ist) ---------- */
+.home-page .container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.home-page .py-5{ padding: 56px 0; }
+.home-page .mb-4{ margin-bottom: 24px; }
+.home-page .mt-3{ margin-top: 16px; }
+.home-page .text-center{ text-align: center; }
+
+.home-page .bg-light{
+  background: rgba(255,255,255,0.04);
+}
 
 /* ---------- Hero / Header ---------- */
 .home-page .masthead{
-  /* Bild hinter dem Header */
+  position: relative;
+  min-height: 520px;
+  display: grid;
+  place-items: center;
+  padding: 72px 16px;
+
+  /* WICHTIG: Pfad von /assets/css/ nach /assets/img/ */
   background-image: url("../img/gokart.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Etwas bessere Lesbarkeit auf Bild */
 .home-page .masthead .overlay{
-  background: linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.20));
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11,16,32,0.65),
+    rgba(11,16,32,0.25)
+  );
 }
 
-/* ---------- Typo & Zentrierung ---------- */
-.home-page .text-center{ text-align:center; } /* falls Bootstrap-CSS fehlt */
-
-.home-page #about h2,
-.home-page #projects h2,
-.home-page #contact h2{
+.home-page .masthead .content{
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
   text-align: center;
+  padding: 24px 18px;
+  color: rgba(255,255,255,0.94);
 }
 
-.home-page #about .section-content,
-.home-page #projects .section-content,
-.home-page #contact .section-content{
+.home-page .masthead h1{
+  margin: 0 0 10px 0;
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+}
+
+.home-page .masthead p{
+  margin: 0 0 18px 0;
+  font-size: clamp(15px, 1.4vw, 18px);
+  opacity: 0.95;
+}
+
+/* ---------- Sections: Split Layout ---------- */
+.home-page h2{
   text-align: center;
+  margin-top: 0;
 }
 
-/* ---------- Layout: Grid/Rows (Bootstrap-Ersatz nur für Home) ---------- */
-.home-page .container{
-  width: min(1200px, 100% - 32px);
-  margin: 0 auto;
-}
-
-.home-page .row{
-  display: flex;
-  flex-wrap: wrap;
+.home-page .home-split{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
   align-items: center;
-  justify-content: center; /* default: mittig */
-  gap: 24px;
+  justify-items: center;
+  margin-top: 14px;
 }
 
-/* Spalten-Basis (Desktop) */
-.home-page .col-md-4{
-  flex: 0 0 33.333%;
-  max-width: 33.333%;
+.home-page .home-split__media,
+.home-page .home-split__content{
+  width: 100%;
 }
-.home-page .col-md-8{
-  flex: 0 0 66.666%;
-  max-width: 66.666%;
+
+/* Content immer zentriert (PC + Handy) */
+.home-page .home-split__content{
+  text-align: center;
+  max-width: 720px;
+}
+
+.home-page .home-split__content p{
+  margin: 0 0 10px 0;
+}
+
+.home-page .home-split__content .lead{
+  font-size: 1.05rem;
+  font-weight: 700;
 }
 
 /* Bilder */
-.home-page .img-fluid{
-  max-width: 100%;
-  height: auto;
-}
-
-.home-page .section-image,
-.home-page .section-imgkontakt{
+.home-page img.section-image,
+.home-page img.section-imgkontakt,
+.home-page .home-split__media img{
+  display: block;
   width: 100%;
+  height: auto;
+  max-width: 720px;           /* Handy: nicht endlos breit */
   border-radius: 16px;
-  display:block;
-  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.28);
+  object-fit: cover;
 }
 
-/* ---------- Buttons: überall wie Kontakt ---------- */
-.home-page .btn,
-.home-page .btn-primary,
-.home-page .btn-success,
-.home-page .btn-outline-secondary,
-.home-page .btn-outline-primary{
-  background: #16a34a;
-  color: #fff;
-  border: 1px solid #16a34a;
-  text-decoration: none;
-}
-
-.home-page .btn:hover,
-.home-page .btn-primary:hover,
-.home-page .btn-success:hover,
-.home-page .btn-outline-secondary:hover,
-.home-page .btn-outline-primary:hover{
-  background: #15803d;
-  border-color: #15803d;
-  color: #fff;
-}
-
-/* ---------- Responsive Verhalten ---------- */
-/* Handy: alles untereinander & mittig */
-@media (max-width: 900px){
-  .home-page .row{
-    flex-direction: column;
-  }
-  .home-page .col-md-4,
-  .home-page .col-md-8{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .home-page .section-image,
-  .home-page .section-imgkontakt{
-    max-width: 520px;
-    margin: 0 auto;
-  }
-}
-
-/* PC: 2 Spalten + abwechselndes Layout */
-@media (min-width: 901px){
-  /* Standard: Bild links, Text rechts (Über mich + Kontakt) */
-  .home-page .home-section-row{
-    flex-direction: row;
-  }
-
-  /* Projekte: Bild rechts, Text links */
-  .home-page #projects .home-section-row{
-    flex-direction: row-reverse;
-  }
-
-  /* Nicht am Rand kleben */
-  .home-page .home-section-row{
-    justify-content: center;
+/* ---------- Desktop: nebeneinander (ab 980px) ---------- */
+@media (min-width: 980px){
+  .home-page .home-split{
+    grid-template-columns: 420px 1fr; /* Bild links, Text rechts */
+    justify-items: stretch;
     gap: 32px;
   }
 
-  /* Bilder etwas begrenzen (wirkt auf Desktop ruhiger) */
-  .home-page .home-col-img img,
-  .home-page img.section-image,
-  .home-page img.section-imgkontakt{
-    max-height: 420px;
-    object-fit: cover;
+  /* Projekte: Bild rechts, Text links */
+  .home-page .home-split--reverse{
+    grid-template-columns: 1fr 420px;
   }
+  .home-page .home-split--reverse .home-split__media{
+    grid-column: 2;
+  }
+  .home-page .home-split--reverse .home-split__content{
+    grid-column: 1;
+  }
+
+  /* Bilder auf Desktop sauber begrenzen */
+  .home-page .home-split__media img{
+    max-width: 420px;
+    max-height: 380px;
+  }
+
+  .home-page .home-split__content{
+    max-width: 820px;
+  }
+}
+
+/* ---------- Buttons: überall wie Kontakt (grün + weiß) ---------- */
+.home-page .btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+
+  border: 1px solid transparent;
+  transition: transform 0.12s ease, filter 0.18s ease;
+}
+
+.home-page .btn:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.home-page .btn-success,
+.home-page .btn-primary,
+.home-page .btn-outline-primary,
+.home-page .btn-outline-secondary{
+  background: #16a34a;
+  color: #ffffff;
+  border-color: rgba(22,163,74,0.55);
+}
+
+/* Mobile: Buttons nicht überbreit */
+.home-page .home-split__content .btn{
+  margin-top: 10px;
+}
+
+/* Kleine Screens: Hero nicht zu hoch */
+@media (max-width: 520px){
+  .home-page .masthead{ min-height: 440px; }
 }
