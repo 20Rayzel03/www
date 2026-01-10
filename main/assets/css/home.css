@@ -19,10 +19,6 @@ body.home-page{
 .home-page .mb-4{ margin-bottom: 24px; }
 .home-page .text-center{ text-align: center; }
 
-.home-page .bg-light{
-  background: rgba(255,255,255,0.25);
-}
-
 /* ---------- Hero / Header ---------- */
 .home-page .masthead{
   position: relative;
@@ -173,8 +169,8 @@ body.home-page{
   text-decoration: none;
   cursor: pointer;
 
-  border: 1px solid rgba(22,163,74,0.55);
-  background: #16a34a;
+  border: 1px solid rgba(197 99 10);
+  background: #c5630a;
   color: #ffffff;
 
   transition: transform 0.12s ease, filter 0.18s ease;

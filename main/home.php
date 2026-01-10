@@ -46,7 +46,7 @@ $base = __DIR__;
   </section>
 
   <!-- Projekte -->
-  <section id="projects" class="py-5 bg-light text-center">
+  <section id="projects" class="py-5 text-center">
     <div class="container">
       <div class="home-split home-split--reverse">
         <div class="home-split__media">
