@@ -209,57 +209,6 @@
   }
 }
 
-/* =========================
-   Home-specific: Masthead, Sections, Buttons
-   (Ergänzungen für die Startseite)
-========================= */
-
-.masthead{
-  position: relative;
-  min-height: 420px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background: linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0.06));
-  padding: 60px 16px;
-}
-
-.masthead .overlay{
-  position:absolute;
-  inset:0;
-  background: linear-gradient(180deg, rgba(11,16,32,0.45), rgba(11,16,32,0.15));
-  pointer-events:none;
-}
-
-.masthead .content{
-  position:relative;
-  z-index:1;
-  text-align:center;
-  max-width: var(--max-width);
-  color: var(--text-main);
-  padding: 40px 20px;
-}
-
-.masthead h1{
-  font-size: 48px;
-  margin: 0 0 12px;
-  line-height: 1;
-}
-
-.masthead p{
-  margin: 0 0 18px;
-  opacity: .95;
-}
-
-.home-section-row{
-  display:flex;
-  gap: 24px;
-  align-items:center;
-  justify-content:center;
-  flex-wrap:wrap;
-  padding: 0 16px; /* Abstand links/rechts zum Viewport */
-}
-
 /* Wenn Bootstrap nicht geladen ist: feste Basisbreiten für die beiden Spalten (nur Home) */
 .home-section-row > .col-md-4{
   flex: 0 0 33.333%;
