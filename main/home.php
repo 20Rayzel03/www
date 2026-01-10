@@ -16,7 +16,7 @@ $base = __DIR__;
 
 </head>
 
-<body class="home-page">
+<body>
 
   <?php include $base . '/assets/header.php'; ?>
 
@@ -40,7 +40,7 @@ $base = __DIR__;
         <div class="col-md-8 section-content home-col-content">
           <p class="lead">Ich bin ein IT-Enthusiast mit Schwerpunkt auf Servermanagement, Support und Linux/Windows-Systemen. <i class="bi bi-person-circle text-primary"></i></p>
           <p>Hier erfährst du mehr über meine Leidenschaft für Technologie und meine berufliche Reise.</p>
-          <a href="bio.php" class="btn btn-success mt-3">Mehr erfahren</a>
+          <a href="bio.php" class="btn btn-outline-secondary mt-3">Mehr erfahren</a>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@ $base = __DIR__;
         <div class="col-md-8 section-content home-col-content">
           <p class="lead">Ein Überblick über meine letzten Arbeiten und IT-Projekte. <i class="bi bi-code-slash text-success"></i></p>
           <p>Entdecke, wie ich Server optimiert, Apps entwickelt und Systeme gesichert habe.</p>
-          <a href="blog.php" class="btn btn-success mt-3">Zum Blog</a>
+          <a href="blog.php" class="btn btn-outline-primary mt-3">Zum Blog</a>
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@ $base = __DIR__;
   <section id="contact" class="py-5 text-center">
     <div class="container">
       <h2 class="mb-4">Kontakt</h2>
-      <div class="row section-row justify-content-center">
+      <div class="row section-row home-section-row justify-content-center">
         <div class="col-md-4 mb-3 home-col-img">
           <img src="assets/img/kontakt.png" alt="Kontakt Illustration" class="section-imgkontakt img-fluid">
         </div>

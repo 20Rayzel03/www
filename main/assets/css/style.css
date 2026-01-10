@@ -25,26 +25,6 @@
 *{ box-sizing: border-box; }
 
 /* =========================
-   Base
-   (damit das Theme auch ohne Bootstrap-CSS sauber ist)
-========================= */
-
-html, body{ height: 100%; }
-
-body{
-  margin: 0;
-  background: var(--bg-main);
-  color: var(--text-main);
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  line-height: 1.5;
-}
-
-a{ color: var(--accent-soft); }
-a:hover{ color: var(--text-main); }
-
-img{ max-width: 100%; height: auto; }
-
-/* =========================
    Header / Navigation
 ========================= */
 
@@ -452,3 +432,7 @@ img.section-imgkontakt{
   .home-section-row .section-content { text-align: center; }
 }
 
+
+
+/* Utility (falls Bootstrap-CSS fehlt) */
+.text-center{ text-align:center; }
