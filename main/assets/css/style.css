@@ -277,6 +277,7 @@
   align-items:center;
   justify-content:center;
   flex-wrap:wrap;
+  padding: 0 16px; /* Abstand links/rechts zum Viewport */
 }
 
 /* Wenn Bootstrap nicht geladen ist: feste Basisbreiten für die beiden Spalten */
@@ -299,6 +300,53 @@ img.section-imgkontakt{
   max-width:100%;
   border-radius: 12px;
   box-shadow: var(--shadow-lg);
+  object-fit: cover;
+}
+
+/* Limit scaling on larger screens */
+@media (min-width: 901px){
+  .section-row .col-md-4 img,
+  img.section-image,
+  img.section-imgkontakt{
+    max-height: 420px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width:900px){
+  .section-row .col-md-4 img,
+  img.section-image,
+  img.section-imgkontakt{
+    max-height: 300px;
+  }
+}
+
+/* Mobile: stack with image first and limit width/height */
+@media (max-width: 640px){
+  .section-row{
+    flex-direction: column;
+    padding: 0 16px;
+  }
+  .section-row > .col-md-4,
+  .section-row > .col-md-8{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .section-row .col-md-4{
+    order: -1; /* Bild oben */
+  }
+  .section-row .col-md-4 img,
+  img.section-image,
+  img.section-imgkontakt{
+    max-height: 260px;
+    width: calc(100% - 32px); /* horizontaler Abstand zum Bildschirmrand */
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 12px;
+  }
+  .section-content{
+    text-align: center;
+  }
 }
 
 .section-image{
