@@ -1,28 +1,26 @@
 /* ==========================================================
    Home Page – responsive (PC + Handy)
-   Hinweis: Alles ist auf .home-page gescoped, damit nichts
-   andere Seiten kaputt macht.
+   - Alles scoped auf .home-page
+   - EIN Layout-System (Grid) => keine Konflikte
 ========================================================== */
 
-.home-page{
-  /* Hintergrundverlauf fuer den gesamten Home-Body */
+/* ---------- Body Background ---------- */
+body.home-page{
   background: linear-gradient(to right, #ffffff, #757273);
 }
 
 /* ---------- Mini-Utilities (falls kein Bootstrap-CSS geladen ist) ---------- */
 .home-page .container{
-  max-width: 1100px;
+  width: min(1100px, 92%);
   margin: 0 auto;
-  padding: 0 16px;
 }
 
 .home-page .py-5{ padding: 56px 0; }
 .home-page .mb-4{ margin-bottom: 24px; }
-.home-page .mt-3{ margin-top: 16px; }
 .home-page .text-center{ text-align: center; }
 
 .home-page .bg-light{
-  background: rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.25);
 }
 
 /* ---------- Hero / Header ---------- */
@@ -33,7 +31,6 @@
   place-items: center;
   padding: 72px 16px;
 
-  /* WICHTIG: Pfad von /assets/css/ nach /assets/img/ */
   background-image: url("../img/gokart.jpg");
   background-size: cover;
   background-position: center;
@@ -56,7 +53,7 @@
   max-width: 900px;
   text-align: center;
   padding: 24px 18px;
-  color: rgba(255,255,255,0.94);
+  color: rgba(255,255,255,0.95);
 }
 
 .home-page .masthead h1{
@@ -72,43 +69,48 @@
   opacity: 0.95;
 }
 
-/* ---------- Sections: Split Layout ---------- */
-
-/* Ab Ueber mich: Schrift schwarz */
+/* ---------- Ab Über mich: Text schwarz ---------- */
 .home-page section{
   color: #111;
 }
+
 .home-page section h2,
 .home-page section p,
 .home-page section .lead{
   color: #111;
 }
 
-.home-page h2{
-  text-align: center;
-  margin-top: 0;
-}
-
-.home-page .home-split{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 22px;
-  align-items: center;
-  justify-items: center;
-  margin-top: 14px;
-}
-
-.home-page .home-split__media,
-.home-page .home-split__content{
+/* H2 wirklich IMMER mittig (auch wenn irgendwo global left gesetzt ist) */
+.home-page section h2{
+  margin: 0 0 18px 0;
+  text-align: center !important;
   width: 100%;
 }
 
-/* Content immer zentriert (PC + Handy) */
-.home-page .home-split__content{
-  text-align: center;
-  max-width: 720px;
+/* ---------- Split Layout (Mobil: untereinander, Desktop: nebeneinander) ---------- */
+.home-page .home-split{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 10px;
 }
 
+/* Beide Spalten sauber begrenzen */
+.home-page .home-split__media{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.home-page .home-split__content{
+  width: 100%;
+  max-width: 720px;
+  text-align: center; /* <- Erzwingt: Überschrift + Text immer mittig */
+}
+
+/* Text spacing */
 .home-page .home-split__content p{
   margin: 0 0 10px 0;
 }
@@ -118,46 +120,44 @@
   font-weight: 700;
 }
 
-/* Bilder */
+/* ---------- Bilder ---------- */
+.home-page .home-split__media img,
 .home-page img.section-image,
-.home-page img.section-imgkontakt,
-.home-page .home-split__media img{
+.home-page img.section-imgkontakt{
   display: block;
   width: 100%;
   height: auto;
-  max-width: 720px;           /* Handy: nicht endlos breit */
+  max-width: 720px;
   border-radius: 16px;
   box-shadow: 0 12px 32px rgba(0,0,0,0.28);
   object-fit: cover;
 }
 
-/* ---------- Desktop: nebeneinander (ab 980px) ---------- */
+/* ---------- Desktop (ab 980px): nebeneinander ---------- */
 @media (min-width: 980px){
   .home-page .home-split{
     grid-template-columns: 420px 1fr; /* Bild links, Text rechts */
     justify-items: stretch;
-    gap: 32px;
+    gap: 40px;
+  }
+
+  /* Bildgröße am Desktop begrenzen */
+  .home-page .home-split__media img{
+    max-width: 420px;
+    max-height: 380px;
   }
 
   /* Projekte: Bild rechts, Text links */
   .home-page .home-split--reverse{
     grid-template-columns: 1fr 420px;
   }
-  .home-page .home-split--reverse .home-split__media{
-    grid-column: 2;
-  }
+
   .home-page .home-split--reverse .home-split__content{
     grid-column: 1;
   }
 
-  /* Bilder auf Desktop sauber begrenzen */
-  .home-page .home-split__media img{
-    max-width: 420px;
-    max-height: 380px;
-  }
-
-  .home-page .home-split__content{
-    max-width: 820px;
+  .home-page .home-split--reverse .home-split__media{
+    grid-column: 2;
   }
 }
 
@@ -173,27 +173,16 @@
   text-decoration: none;
   cursor: pointer;
 
-  border: 1px solid transparent;
+  border: 1px solid rgba(22,163,74,0.55);
+  background: #16a34a;
+  color: #ffffff;
+
   transition: transform 0.12s ease, filter 0.18s ease;
 }
 
 .home-page .btn:hover{
   transform: translateY(-1px);
   filter: brightness(1.05);
-}
-
-.home-page .btn-success,
-.home-page .btn-primary,
-.home-page .btn-outline-primary,
-.home-page .btn-outline-secondary{
-  background: #16a34a;
-  color: #ffffff;
-  border-color: rgba(22,163,74,0.55);
-}
-
-/* Mobile: Buttons nicht überbreit */
-.home-page .home-split__content .btn{
-  margin-top: 10px;
 }
 
 /* Kleine Screens: Hero nicht zu hoch */
