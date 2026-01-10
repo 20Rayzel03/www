@@ -33,11 +33,11 @@ $base = __DIR__;
   <section id="about" class="py-5 text-center">
     <div class="container">
       <h2 class="mb-4">Über mich</h2>
-      <div class="row section-row justify-content-center">
-        <div class="col-md-4 mb-3">
+      <div class="row section-row home-section-row justify-content-center">
+        <div class="col-md-4 mb-3 home-col-img">
           <img src="assets/img/real_me.png" alt="Profilbild" class="section-image img-fluid">
         </div>
-        <div class="col-md-8 section-content">
+        <div class="col-md-8 section-content home-col-content">
           <p class="lead">Ich bin ein IT-Enthusiast mit Schwerpunkt auf Servermanagement, Support und Linux/Windows-Systemen. <i class="bi bi-person-circle text-primary"></i></p>
           <p>Hier erfährst du mehr über meine Leidenschaft für Technologie und meine berufliche Reise.</p>
           <a href="bio.php" class="btn btn-outline-secondary mt-3">Mehr erfahren</a>
@@ -50,11 +50,11 @@ $base = __DIR__;
   <section id="projects" class="py-5 bg-light text-center">
     <div class="container">
       <h2 class="mb-4">Projekte</h2>
-      <div class="row section-row justify-content-center">
-        <div class="col-md-4 mb-3 order-md-2">
+      <div class="row section-row home-section-row justify-content-center">
+        <div class="col-md-4 mb-3 home-col-img">
           <img src="assets/img/projekt-v2.png" alt="Projekte Übersicht" class="section-image img-fluid">
         </div>
-        <div class="col-md-8 section-content order-md-1">
+        <div class="col-md-8 section-content home-col-content">
           <p class="lead">Ein Überblick über meine letzten Arbeiten und IT-Projekte. <i class="bi bi-code-slash text-success"></i></p>
           <p>Entdecke, wie ich Server optimiert, Apps entwickelt und Systeme gesichert habe.</p>
           <a href="blog.php" class="btn btn-outline-primary mt-3">Zum Blog</a>
@@ -67,11 +67,11 @@ $base = __DIR__;
   <section id="contact" class="py-5 text-center">
     <div class="container">
       <h2 class="mb-4">Kontakt</h2>
-      <div class="row section-row justify-content-center">
-        <div class="col-md-4 mb-3">
+      <div class="row section-row home-section-row justify-content-center">
+        <div class="col-md-4 mb-3 home-col-img">
           <img src="assets/img/kontakt.png" alt="Kontakt Illustration" class="section-imgkontakt img-fluid">
         </div>
-        <div class="col-md-8 section-content">
+        <div class="col-md-8 section-content home-col-content">
           <p class="lead">Du möchtest mit mir in Kontakt treten? Ich freue mich über deine Nachricht. <i class="bi bi-chat-dots text-info"></i></p>
           <p>Lass uns über IT-Themen, Projekte und weiters sprechen.</p>
           <a href="kontakt.php" class="btn btn-success mt-3">Kontakt aufnehmen</a>

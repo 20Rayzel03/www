@@ -271,7 +271,7 @@
   opacity: .95;
 }
 
-.section-row{
+.home-section-row{
   display:flex;
   gap: 24px;
   align-items:center;
@@ -280,18 +280,18 @@
   padding: 0 16px; /* Abstand links/rechts zum Viewport */
 }
 
-/* Wenn Bootstrap nicht geladen ist: feste Basisbreiten für die beiden Spalten */
-.section-row > .col-md-4{
+/* Wenn Bootstrap nicht geladen ist: feste Basisbreiten für die beiden Spalten (nur Home) */
+.home-section-row > .col-md-4{
   flex: 0 0 33.333%;
   max-width: 33.333%;
 }
-.section-row > .col-md-8{
+.home-section-row > .col-md-8{
   flex: 0 0 66.666%;
   max-width: 66.666%;
 }
 
-/* Bild-Styles: innerhalb der Spalte begrenzen und skalieren */
-.section-row .col-md-4 img,
+/* Bild-Styles: innerhalb der Spalte begrenzen und skalieren (nur Home) */
+.home-section-row .col-md-4 img,
 img.section-image,
 img.section-imgkontakt{
   display:block;
@@ -305,7 +305,7 @@ img.section-imgkontakt{
 
 /* Limit scaling on larger screens */
 @media (min-width: 901px){
-  .section-row .col-md-4 img,
+  .home-section-row .col-md-4 img,
   img.section-image,
   img.section-imgkontakt{
     max-height: 420px;
@@ -314,28 +314,28 @@ img.section-imgkontakt{
 
 /* Tablet */
 @media (min-width: 641px) and (max-width:900px){
-  .section-row .col-md-4 img,
+  .home-section-row .col-md-4 img,
   img.section-image,
   img.section-imgkontakt{
     max-height: 300px;
   }
 }
 
-/* Mobile: stack with image first and limit width/height */
+/* Mobile: stack with image first and limit width/height (only Home) */
 @media (max-width: 640px){
-  .section-row{
+  .home-section-row{
     flex-direction: column;
     padding: 0 16px;
   }
-  .section-row > .col-md-4,
-  .section-row > .col-md-8{
+  .home-section-row > .col-md-4,
+  .home-section-row > .col-md-8{
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .section-row .col-md-4{
+  .home-section-row .col-md-4{
     order: -1; /* Bild oben */
   }
-  .section-row .col-md-4 img,
+  .home-section-row .col-md-4 img,
   img.section-image,
   img.section-imgkontakt{
     max-height: 260px;
@@ -344,7 +344,8 @@ img.section-imgkontakt{
     margin-right: 16px;
     border-radius: 12px;
   }
-  .section-content{
+  .home-section-row .section-content,
+  .home-section-row .home-col-content{
     text-align: center;
   }
 }
@@ -373,12 +374,13 @@ img.section-imgkontakt{
   display:inline-flex;
   align-items:center;
   gap:8px;
-  padding:10px 16px;
+  padding:8px 12px; /* kompaktere Buttons */
   border-radius: 10px;
   font-weight:700;
   text-decoration:none;
   cursor:pointer;
   border: 1px solid transparent;
+  white-space: nowrap; /* verhindert ungewolltes Umfließen */
 }
 
 .btn-primary{
@@ -404,7 +406,7 @@ img.section-imgkontakt{
 }
 
 @media (max-width: 900px){
-  .section-row{ flex-direction: column; }
-  .section-content { text-align: center; }
+  .home-section-row{ flex-direction: column; }
+  .home-section-row .section-content { text-align: center; }
 }
 
