@@ -5,8 +5,8 @@
 ========================================================== */
 
 .home-page{
-  /* Falls irgendwo alte Regeln noch reinfunken */
-  background: transparent;
+  /* Hintergrundverlauf fuer den gesamten Home-Body */
+  background: linear-gradient(to right, #ffffff, #757273);
 }
 
 /* ---------- Mini-Utilities (falls kein Bootstrap-CSS geladen ist) ---------- */
@@ -73,6 +73,17 @@
 }
 
 /* ---------- Sections: Split Layout ---------- */
+
+/* Ab Ueber mich: Schrift schwarz */
+.home-page section{
+  color: #111;
+}
+.home-page section h2,
+.home-page section p,
+.home-page section .lead{
+  color: #111;
+}
+
 .home-page h2{
   text-align: center;
   margin-top: 0;
