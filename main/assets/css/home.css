@@ -6,7 +6,7 @@
 
 /* ---------- Body Background ---------- */
 body.home-page{
-  background: linear-gradient(to right, #ffffff, #757273);
+  background: linear-gradient(to right, #3f3f3f, #363636);
 }
 
 /* ---------- Mini-Utilities (falls kein Bootstrap-CSS geladen ist) ---------- */
