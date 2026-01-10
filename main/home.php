@@ -40,7 +40,7 @@ $base = __DIR__;
         <div class="col-md-8 section-content home-col-content">
           <p class="lead">Ich bin ein IT-Enthusiast mit Schwerpunkt auf Servermanagement, Support und Linux/Windows-Systemen. <i class="bi bi-person-circle text-primary"></i></p>
           <p>Hier erfährst du mehr über meine Leidenschaft für Technologie und meine berufliche Reise.</p>
-          <a href="bio.php" class="btn btn-outline-secondary mt-3">Mehr erfahren</a>
+          <a href="bio.php" class="btn btn-success mt-3">Mehr erfahren</a>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@ $base = __DIR__;
         <div class="col-md-8 section-content home-col-content">
           <p class="lead">Ein Überblick über meine letzten Arbeiten und IT-Projekte. <i class="bi bi-code-slash text-success"></i></p>
           <p>Entdecke, wie ich Server optimiert, Apps entwickelt und Systeme gesichert habe.</p>
-          <a href="blog.php" class="btn btn-outline-primary mt-3">Zum Blog</a>
+          <a href="blog.php" class="btn btn-success mt-3">Zum Blog</a>
         </div>
       </div>
     </div>
@@ -82,8 +82,6 @@ $base = __DIR__;
 
   <?php include $base . '/assets/sozial.php'; ?>
   <?php include $base . '/assets/footer.php'; ?>
-
-  <script src="assets/js/bootstrap.bundle.js"></script>
 
 </body>
 </html>
