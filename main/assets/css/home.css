@@ -5,6 +5,7 @@
 body{
   background: linear-gradient(to right, #ffffff, #757273);
   font-family: 'Roboto', sans-serif;
+  color: #111; /* dunkle Textfarbe für bessere Lesbarkeit auf dem hellen Hintergrund */
 }
 
 .contact-wrap{
