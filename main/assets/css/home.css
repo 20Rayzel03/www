@@ -73,7 +73,7 @@ body.home-page{
 .home-page section h2,
 .home-page section p,
 .home-page section .lead{
-  color: #111;
+  color: #ffffff;
 }
 
 /* H2 wirklich IMMER mittig (auch wenn irgendwo global left gesetzt ist) */
