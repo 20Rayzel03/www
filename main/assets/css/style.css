@@ -279,15 +279,39 @@
   flex-wrap:wrap;
 }
 
+/* Wenn Bootstrap nicht geladen ist: feste Basisbreiten für die beiden Spalten */
+.section-row > .col-md-4{
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
+.section-row > .col-md-8{
+  flex: 0 0 66.666%;
+  max-width: 66.666%;
+}
+
+/* Bild-Styles: innerhalb der Spalte begrenzen und skalieren */
+.section-row .col-md-4 img,
+img.section-image,
+img.section-imgkontakt{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:100%;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+}
+
 .section-image{
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
 }
 
 .section-content{
   max-width: 700px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertikale Zentrierung gegenüber dem Bild */
 }
 
 .section-content p.lead{
