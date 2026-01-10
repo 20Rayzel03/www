@@ -92,26 +92,6 @@
   border: 1px solid rgba(59,130,246,0.35);
 }
 
-/* Mobile */
-@media (max-width: 768px){
-  .main-nav{
-    flex-wrap: wrap;
-  }
-
-  .main-nav .nav-center{
-    width: 100%;
-    justify-content: space-between;
-    gap: 6px;
-    flex-wrap: wrap;
-  }
-
-  .main-nav .nav-center a{
-    flex: 1;
-    min-width: 120px;
-    text-align: center;
-  }
-}
-
 /* =========================
    Footer
 ========================= */
@@ -310,16 +290,58 @@ img.section-imgkontakt{
   img.section-imgkontakt{
     max-height: 420px;
   }
+
+  /* Desktop: klarer Left-Image / Right-Text Fluss und linke Ausrichtung (Home) */
+  .home-section-row{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+  .home-section-row > .col-md-4{
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    order: 0;
+  }
+  .home-section-row > .col-md-8{
+    flex: 0 0 66.666%;
+    max-width: 66.666%;
+    order: 1;
+  }
+
+  /* Force headings and content to be left-aligned on desktop */
+  #about h2, #projects h2{
+    text-align: left;
+  }
+  .home-section-row .section-content,
+  .home-section-row .home-col-content{
+    text-align: left;
+  }
+
+  /* Kontakt: separater, stabiler Desktop-Flow (so wie vorher) */
+  #contact .row{
+    display:flex;
+    gap: 24px;
+    align-items:center;
+    justify-content:flex-start;
+  }
+  #contact .col-md-4{
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+  #contact .col-md-8{
+    flex: 0 0 66.666%;
+    max-width: 66.666%;
+  }
+  #contact img{
+    width:100%;
+    height:auto;
+    max-height:420px;
+    object-fit: cover;
+  }
+  #contact .section-content{ text-align: left; }
 }
 
-/* Tablet */
-@media (min-width: 641px) and (max-width:900px){
-  .home-section-row .col-md-4 img,
-  img.section-image,
-  img.section-imgkontakt{
-    max-height: 300px;
-  }
-}
 
 /* Mobile: stack with image first and limit width/height (only Home) */
 @media (max-width: 640px){

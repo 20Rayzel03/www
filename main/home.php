@@ -67,7 +67,7 @@ $base = __DIR__;
   <section id="contact" class="py-5 text-center">
     <div class="container">
       <h2 class="mb-4">Kontakt</h2>
-      <div class="row section-row home-section-row justify-content-center">
+      <div class="row section-row justify-content-center">
         <div class="col-md-4 mb-3 home-col-img">
           <img src="assets/img/kontakt.png" alt="Kontakt Illustration" class="section-imgkontakt img-fluid">
         </div>
