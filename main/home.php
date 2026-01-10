@@ -16,7 +16,7 @@ $base = __DIR__;
 
 </head>
 
-<body>
+<body class="home-page">
 
   <?php include $base . '/assets/header.php'; ?>
 

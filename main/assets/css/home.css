@@ -1,45 +1,83 @@
-/* ------------------------------
-   1. Head of Home
------------------------------- */
-/* ---- page styles ---- */
-body{
-  background: linear-gradient(to right, #ffffff, #757273);
-  font-family: 'Roboto', sans-serif;
-  color: #111; /* dunkle Textfarbe für bessere Lesbarkeit auf dem hellen Hintergrund */
+/* =========================================
+   home.css
+   Startseite (home.php)
+   - absichtlich KEINE globalen body/h1 Regeln
+   - Fokus: kleine Utilities + Social Section
+========================================= */
+
+/* -------------------------------------------------
+   Mini-Utilities (falls Bootstrap-CSS nicht geladen)
+   Alles ist auf .home-page gescoped, damit andere
+   Seiten nicht beeinflusst werden.
+------------------------------------------------- */
+.home-page .container{
+  width: min(1200px, 100% - 32px);
+  margin: 0 auto;
 }
 
-.contact-wrap{
-  padding: 15px;
+.home-page .py-5{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-h1{
-  background-color: white;
-  color: #000000; /* lighten(#FF512F, ~10%) */
-  padding: 40px;
-  margin: 0 0 50px;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
+.home-page .text-center{ text-align: center; }
+.home-page .mb-4{ margin-bottom: 1.5rem; }
+.home-page .mt-3{ margin-top: 1rem; }
+
+.home-page .lead{
+  font-size: 1.05rem;
+  font-weight: 600;
 }
 
-h1 small{
-  font-size: 18px;
-  display: block;
-  text-transform: none;
-  font-weight: 300;
-  margin-top: 10px;
-  color: #1d1d1d;
+.home-page .bg-light{
+  /* „bg-light“ im Dark-Theme als dezentes Panel */
+  background: rgba(255,255,255,0.03);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
-/* ------------------------------
-   2. Sozial
------------------------------- */
+.home-page .img-fluid{
+  max-width: 100%;
+  height: auto;
+}
 
-/* ===== Social Section (override-sicher) ===== */
+/* Bootstrap-Grid (nur Home) */
+.home-page .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page .col-md-4{
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
+
+.home-page .col-md-8{
+  flex: 0 0 66.666%;
+  max-width: 66.666%;
+}
+
+/* Mobile: sauber stacken */
+@media (max-width: 900px){
+  .home-page .row{
+    flex-direction: column;
+    gap: 18px;
+  }
+  .home-page .col-md-4,
+  .home-page .col-md-8{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* -------------------------------------------------
+   Social Section (override-sicher)
+------------------------------------------------- */
 .social{
   padding: 56px 16px;
-  /* falls du KEINEN großen Verlauf willst, nimm die nächsten 2 Zeilen raus */
   background: radial-gradient(1200px 500px at 50% 0%, rgba(255,255,255,.08), transparent 60%),
               linear-gradient(180deg, rgba(0,0,0,.18), transparent 60%);
 }
@@ -119,7 +157,7 @@ h1 small{
   opacity: .7;
 }
 
-/* Responsive */
+/* Responsive Social Grid */
 @media (max-width: 980px){
   .social .social-list{ grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 }
@@ -129,4 +167,3 @@ h1 small{
 @media (max-width: 420px){
   .social .social-list{ grid-template-columns: 1fr !important; }
 }
-
