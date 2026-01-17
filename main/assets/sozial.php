@@ -7,7 +7,7 @@
 <section id="sozial" class="py-5 text-center">
   <div class="container">
     <h2 class="mb-4">Sozial Media</h2>
-    <ul class="social-list" role="list">
+    <ul class="nav-center" role="list">
 
       <li role="listitem">
         <a href="https://www.instagram.com/juliuspollag/" class="fa fa-instagram"></a>
