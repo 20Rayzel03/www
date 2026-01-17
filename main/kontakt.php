@@ -97,5 +97,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </main>
 
 <script src="assets/js/kontakt.js"></script>
-<?php include $base . '/assets/sozial.php'; ?>
+
 <?php include 'assets/footer.php'; ?>

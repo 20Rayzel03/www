@@ -1,4 +1,4 @@
-<?php include $base . '/assets/header.php'; ?>
+<?php include 'assets/header.php'; ?>
 
 <link rel="stylesheet" href="assets/css/head-foot.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/head-foot.css') ?>">
 <link rel="stylesheet" href="assets/css/blog.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/blog.css') ?>">
@@ -48,5 +48,4 @@
   </section>
 </main>
 
-<?php include $base . '/assets/sozial.php'; ?>
-<?php include $base . '/assets/footer.php'; ?>
+<?php include 'assets/footer.php'; ?>
