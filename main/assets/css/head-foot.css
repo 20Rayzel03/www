@@ -320,7 +320,7 @@ main{ min-height: calc(100vh - 72px - 120px); } /* nav ~72px, footer ~120px (gro
   color: white;
 }
 
-.fa-mailto {
+.fa-envelope {
   background: #dd4b39;
   color: white;
 }

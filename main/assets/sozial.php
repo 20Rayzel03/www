@@ -30,7 +30,7 @@
       </li>
 
       <li role="listitem">
-        <a href="mailto:julius.pollag@jqpollag.de" class="fa fa-mailto"></a>
+        <a href="mailto:julius.pollag@jqpollag.de" class="fa fa-envelope"></a>
         </a>
       </li>
     </ul>
