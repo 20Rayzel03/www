@@ -48,4 +48,5 @@
   </section>
 </main>
 
+ <?php include $base . '/assets/sozial.php'; ?>
 <?php include 'assets/footer.php'; ?>
