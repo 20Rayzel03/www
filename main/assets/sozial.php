@@ -25,7 +25,7 @@
       </li>
 
       <li role="listitem">
-        <a href="#" class="fa fa-facebook "></a>
+        <a href="https://www.facebook.com/destiny.gaming.5494" class="fa fa-facebook "></a>
         </a>
       </li>
 
