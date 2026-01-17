@@ -247,6 +247,47 @@ main{ min-height: calc(100vh - 72px - 120px); } /* nav ~72px, footer ~120px (gro
    Social Media Icons
 ========== */
 
+/* Sozial Media Icons horizontal */
+#sozial .soz-center{
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap; /* falls Bildschirm klein ist */
+}
+
+#sozial .soz-center li{
+  margin: 0;
+  padding: 0;
+}
+
+/* Icon Buttons */
+#sozial .soz-center a.fa{
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+  text-decoration: none;
+
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+
+  border: 1px solid rgba(255,255,255,0.22);
+  transition: transform 0.12s ease, filter 0.18s ease;
+}
+
+#sozial .soz-center a.fa:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
