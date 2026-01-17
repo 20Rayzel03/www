@@ -70,5 +70,5 @@
     </div>
   </section>
 </main>
- <?php include $base . '/assets/sozial.php'; ?>
+<?php include $base . '/assets/sozial.php'; ?>
 <?php include 'assets/footer.php'; ?>
