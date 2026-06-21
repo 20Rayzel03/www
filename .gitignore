@@ -1,8 +1,11 @@
 # Lokale Backups und temporäre Dateien
 *.bak
 *.bak.*
+*.bak-*
+*bak*
 *.backup
 *.backup.*
+*backup*
 *.tmp
 main.*.bak.*/
 
