@@ -1,13 +1,16 @@
-# 📖 JQPOLLAG.DE – Persönliche Webseite & Homelab-Blog
+# 📖 Mein Blog / meine persönliche Webseite
 
-Dies ist die persönliche Webseite von Julius Pollag mit Bio, Kontaktbereich, Blog, Login-/Registrierungsfunktion und einem kleinen Adminbereich.
+Das ist mein persönliches Webseiten- und Blog-Projekt.  
+Die Seite ist als moderne, responsive Webseite aufgebaut und läuft bei mir im Homelab auf einem Raspberry Pi bzw. Linux-Server.
 
-Die Seite läuft als klassische PHP-Webseite mit MariaDB-Anbindung und wird im Homelab auf einem Raspberry Pi bzw. Linux-Host betrieben.  
-Der öffentliche Einstiegspunkt ist der Ordner `main/`.
+Ich nutze die Seite, um mich kurz vorzustellen, Blogbeiträge zu veröffentlichen und kleinere interne Funktionen wie Login, Adminbereich und Aufgabenverwaltung zu testen bzw. weiterzuentwickeln.
+
+Die Webseite ist klassisch mit PHP, CSS und MariaDB/MySQL aufgebaut.  
+Der eigentliche öffentliche Webbereich liegt im Ordner `main/`.
 
 ---
 
-## 🚀 Aktueller Projektaufbau
+## 🚀 Projektaufbau
 
 ```text
 /var/www
@@ -46,46 +49,64 @@ Der öffentliche Einstiegspunkt ist der Ordner `main/`.
 
 ---
 
-## ⚛️ Seitenbereiche
+## 🏠 Startseite
 
-### Startseite
+Die Startseite besteht aus:
 
-Dateien:
-
-- `main/index.php`
-- `main/home.php`
-
-Die Startseite enthält:
-
-- moderne Hero-/Intro-Sektion
-- Teaser zur Bio-Seite
-- Übersicht aktueller Blogbeiträge
+- einer modernen Einstiegs-/Hero-Sektion
+- einem kurzen Überblick über die Webseite
+- einem Teaser zu meiner Bio
+- einer Übersicht aktueller Blogbeiträge
 - Navigation zu Blog, Bio, Kontakt, Login und weiteren Seiten
+
+Wichtige Dateien:
+
+```text
+main/index.php
+main/home.php
+```
 
 ---
 
-### Bio
+## 👤 Bio
+
+Auf der Bio-Seite stelle ich mich kurz vor.  
+Dort geht es unter anderem um meinen Werdegang, meine Interessen, Hobbys und Projekte.
 
 Datei:
 
-- `main/bio.php`
-
-Die Bio-Seite enthält persönliche Informationen, Werdegang, Interessen, Hobbys und Links zu sozialen Medien.
+```text
+main/bio.php
+```
 
 ---
 
-### Blog
+## 📝 Blog
 
-Dateien:
+Im Blog veröffentliche ich Beiträge zu Themen, die mich interessieren oder die ich in meinem Homelab umgesetzt habe.
 
-- `main/blog.php`
-- `main/blog_post.php`
-- `main/assets/img/blog/`
+Dazu gehören zum Beispiel Themen rund um:
 
-Der Blog zeigt veröffentlichte Beiträge mit eigenen SVG-Titelbildern.  
-Einzelne Beiträge sind über `blog_post.php` erreichbar.
+- Linux
+- Homelab
+- Serverdienste
+- Nextcloud
+- Bitwarden
+- Reverse Proxy
+- VPN
+- SSH
+- Raspberry Pi
+- TrueNAS / Proxmox
 
-Die Blogbilder liegen unter:
+Wichtige Dateien:
+
+```text
+main/blog.php
+main/blog_post.php
+main/assets/img/blog/
+```
+
+Die Bilder für die Blogbeiträge liegen unter:
 
 ```text
 main/assets/img/blog/
@@ -93,78 +114,85 @@ main/assets/img/blog/
 
 ---
 
-### Kontakt
+## ✉️ Kontakt
+
+Über die Kontaktseite können Nachrichten bzw. Anfragen abgeschickt werden.
 
 Datei:
 
-- `main/kontakt.php`
-
-Enthält ein Kontaktformular für Anfragen/Nachrichten.
-
----
-
-### Login & Registrierung
-
-Dateien:
-
-- `main/login.php`
-- `main/register.php`
-- `main/assets/auth.php`
-- `main/assets/footer-login.php`
-
-Funktionen:
-
-- Benutzerregistrierung
-- Login
-- Session-basierte Anmeldung
-- gemeinsamer Auth-Helper über `assets/auth.php`
+```text
+main/kontakt.php
+```
 
 ---
 
-### Dashboard & Profil
+## 🔐 Login und Registrierung
 
-Dateien:
+Die Webseite besitzt eine einfache Login- und Registrierungsfunktion.
 
-- `main/dashboard.php`
-- `main/profile.php`
+Wichtige Dateien:
 
-Nach dem Login gelangt der Benutzer ins Dashboard.  
-Dort gibt es unter anderem Zugriff auf Profil-/Accountfunktionen und – je nach Rolle – Adminbereiche.
+```text
+main/login.php
+main/register.php
+main/assets/auth.php
+main/assets/footer-login.php
+```
 
----
-
-### Adminbereich
-
-Dateien:
-
-- `main/blog_admin.php`
-- `main/tasks.php`
-- `main/anfragen.php`
-
-Adminfunktionen:
-
-- Blogbeiträge verwalten
-- Anfragen einsehen
-- Aufgaben-/Kanban-ähnlicher Bereich für interne Verwaltung
-
-Adminseiten sind über die Auth-/Adminprüfung geschützt.
+Nach dem Login landet man im Dashboard.
 
 ---
 
-### Rechtliches
+## 📊 Dashboard und Profil
 
-Dateien:
+Nach der Anmeldung gibt es ein Dashboard mit weiteren Funktionen.  
+Dazu gehört unter anderem eine Profilseite und je nach Benutzerrolle auch Zugriff auf Adminbereiche.
 
-- `main/impressum.php`
-- `main/datenschutz.php`
+Wichtige Dateien:
 
-Enthält Impressum und Datenschutzerklärung.
+```text
+main/dashboard.php
+main/profile.php
+```
 
 ---
 
-## 🎨 Design & Assets
+## 🛠️ Adminbereich
 
-CSS-Dateien liegen unter:
+Der Adminbereich ist für interne Verwaltungsfunktionen gedacht.
+
+Aktuell gibt es unter anderem:
+
+- Verwaltung von Blogbeiträgen
+- Übersicht von Anfragen
+- einen einfachen Aufgaben-/Kanban-Bereich
+
+Wichtige Dateien:
+
+```text
+main/blog_admin.php
+main/anfragen.php
+main/tasks.php
+```
+
+Die Adminseiten sind über die Login-/Adminprüfung geschützt.
+
+---
+
+## ⚖️ Rechtliches
+
+Für die rechtlichen Seiten gibt es eigene Dateien:
+
+```text
+main/impressum.php
+main/datenschutz.php
+```
+
+---
+
+## 🎨 Design und Dateien
+
+Die CSS-Dateien liegen hier:
 
 ```text
 main/assets/css/
@@ -172,23 +200,35 @@ main/assets/css/
 
 Wichtige Stylesheets:
 
-- `style.css`
-- `head-foot.css`
-- `home.css`
-- `bio.css`
-- `blog.css`
-- `kontakt.css`
-- `rechtliches.css`
+```text
+main/assets/css/style.css
+main/assets/css/head-foot.css
+main/assets/css/home.css
+main/assets/css/bio.css
+main/assets/css/blog.css
+main/assets/css/kontakt.css
+main/assets/css/rechtliches.css
+```
 
-Favicons und App-Icons liegen direkt unter `main/`.
+Favicons und App-Icons liegen direkt im Ordner `main/`.
 
 ---
 
 ## 🛠️ Installation / Deployment
 
-### Repository klonen
+Ich verwende als Webroot normalerweise:
 
-Empfohlener Pfad auf dem Webserver:
+```text
+/var/www/main
+```
+
+Das Repository liegt dabei unter:
+
+```text
+/var/www
+```
+
+Repository klonen:
 
 ```bash
 cd /var
@@ -206,15 +246,11 @@ cd /var/www
 
 ---
 
-## 🌐 Webserver-Konfiguration
+## 🌐 Beispiel für nginx
 
-Der Webserver sollte auf folgenden Document Root zeigen:
+Der Webserver sollte auf den Ordner `main/` zeigen.
 
-```text
-/var/www/main
-```
-
-Beispiel für nginx:
+Beispiel:
 
 ```nginx
 server {
@@ -235,7 +271,7 @@ server {
 }
 ```
 
-Je nach Distribution kann der PHP-FPM-Socket anders heißen, zum Beispiel:
+Der PHP-FPM-Socket kann je nach System anders heißen, zum Beispiel:
 
 ```text
 /run/php/php8.2-fpm.sock
@@ -247,15 +283,15 @@ Je nach Distribution kann der PHP-FPM-Socket anders heißen, zum Beispiel:
 
 ## 🧩 Voraussetzungen
 
-Benötigt werden typischerweise:
+Für den Betrieb werden typischerweise benötigt:
 
 - nginx oder Apache
 - PHP-FPM
-- PHP MySQL/MariaDB Erweiterung
+- PHP-MySQL-Erweiterung
 - MariaDB/MySQL
 - Git
 
-Beispiel Debian/Raspberry Pi OS:
+Beispiel für Debian oder Raspberry Pi OS:
 
 ```bash
 sudo apt update
@@ -266,21 +302,22 @@ sudo apt install nginx php-fpm php-mysql mariadb-server git
 
 ## 🗄️ Datenbank
 
-Die Webseite nutzt MariaDB/MySQL für dynamische Bereiche wie:
+Die Webseite nutzt MariaDB/MySQL für dynamische Funktionen wie:
 
 - Benutzer/Login
 - Blogbeiträge
 - Kontaktanfragen
-- Admin-/Aufgabenfunktionen
+- Adminfunktionen
+- Aufgabenverwaltung
 
-Datenbank-Zugangsdaten gehören **nicht öffentlich ins Repository**.  
-Lokale Konfigurationen mit Passwörtern sollten nur auf dem Server liegen und nicht committed werden.
+Zugangsdaten und echte Datenbank-Dumps gehören nicht öffentlich ins Repository.  
+Lokale Konfigurationsdateien mit Passwörtern bleiben nur auf dem Server.
 
 ---
 
 ## ✅ Prüfung nach Änderungen
 
-PHP-Syntax prüfen:
+PHP-Dateien prüfen:
 
 ```bash
 cd /var/www
@@ -290,14 +327,14 @@ for f in $(git ls-files 'main/*.php' 'main/assets/*.php'); do
 done
 ```
 
-nginx prüfen:
+nginx prüfen und neu laden:
 
 ```bash
 sudo nginx -t
 sudo systemctl reload nginx
 ```
 
-Lokaler HTTP-Test:
+Lokaler Test:
 
 ```bash
 curl -I http://127.0.0.1/
@@ -310,13 +347,15 @@ curl -I http://127.0.0.1/login.php
 
 ## 🔐 GitHub Deployment per SSH
 
-Auf dem Server wird idealerweise ein Deploy Key verwendet:
+Auf dem Server nutze ich am besten einen SSH Deploy Key.
+
+Remote auf SSH setzen:
 
 ```bash
 git remote set-url origin git@github.com:20Rayzel03/www.git
 ```
 
-Push:
+Änderungen pushen:
 
 ```bash
 cd /var/www
@@ -325,19 +364,21 @@ git push origin main
 
 ---
 
-## 📌 Hinweise
+## 📌 Hinweise für mich
 
 Nicht committen:
 
 - `.bak` Dateien
 - Backup-Ordner
-- Datenbank-Dumps mit echten Benutzerdaten
+- Datenbank-Dumps mit echten Daten
 - Zugangsdaten
 - temporäre Testdateien
+- lokale Editor-/IDE-Dateien
 
-Beispiele für lokale Backups, die nicht ins Repo gehören:
+Beispiele:
 
 ```text
 main.*.bak.*
 *.bak*
+.vscode/
 ```

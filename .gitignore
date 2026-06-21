@@ -1,0 +1,18 @@
+# Lokale Backups und temporäre Dateien
+*.bak
+*.bak.*
+*.backup
+*.backup.*
+*.tmp
+main.*.bak.*/
+
+# Lokale Editor-/IDE-Dateien
+.vscode/
+.idea/
+
+# Lokale Datenbank-Dumps / sensible Exporte
+*.sql
+*.sql.gz
+*.dump
+database/
+db/
