@@ -1,9 +1,7 @@
-<?php include 'assets/header.php'; ?>
-
-<link rel="stylesheet" href="assets/css/head-foot.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/head-foot.css') ?>">
-<link rel="stylesheet" href="assets/css/rechtliches.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/rechtliches.css') ?>">
-
-<main class="legal-container">
+<?php $pageTitle = 'Datenschutzerklärung'; include 'assets/header.php'; ?>
+<header class="page-hero"><div class="container"><span class="eyebrow">Rechtliches</span><h1>Datenschutzerklärung</h1></div></header>
+<main class="section">
+<main class="container content-panel bio-copy">
   <h1>Datenschutzerklärung</h1>
   <p>Der Schutz deiner persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten deine Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG). In dieser Datenschutzerklärung informieren wir dich über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Website.</p>
 
@@ -43,7 +41,7 @@
   <h2>7. Änderungen</h2>
   <p>Wir behalten uns das Recht vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.</p>
 
-  <p style="margin-top: 2rem; font-size: 0.9rem; color: #555;">Letzte Aktualisierung: Oktober 2025</p>
+  <p class="muted" style="margin-top:2rem">Letzte Aktualisierung: Oktober 2025</p>
 </main>
-
+</main>
 <?php include 'assets/footer.php'; ?>

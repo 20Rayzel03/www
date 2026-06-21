@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = isset($_POST['password']) ? trim($_POST['password']) : '';
 
     if ($login !== '' && $password !== '') {
-        $sql = "SELECT id, username, passwort FROM benutzer WHERE username = ? OR email = ? LIMIT 1";
+        $sql = "SELECT id, username, passwort, COALESCE(is_admin, 0) AS is_admin FROM benutzer WHERE username = ? OR email = ? LIMIT 1";
         $stmt = $conn->prepare($sql);
 
         if ($stmt === false) {
@@ -20,13 +20,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $stmt->store_result();
 
             if ($stmt->num_rows === 1) {
-                $stmt->bind_result($id, $username, $hash);
+                $stmt->bind_result($id, $username, $hash, $is_admin);
                 $stmt->fetch();
 
                 if (is_string($hash) && password_verify($password, $hash)) {
                     session_regenerate_id(true);
                     $_SESSION['user_id'] = $id;
                     $_SESSION['username'] = $username;
+                    $_SESSION['is_admin'] = (int)$is_admin;
                     header("Location: dashboard.php");
                     exit;
                 }

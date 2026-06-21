@@ -1,9 +1,7 @@
-<?php include 'assets/header.php'; ?>
-
-  <link rel="stylesheet" href="assets/css/head-foot.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/head-foot.css') ?>">
-<link rel="stylesheet" href="assets/css/rechtliches.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/css/rechtliches.css') ?>">
-
-<main class="legal-container">
+<?php $pageTitle = 'Impressum'; include 'assets/header.php'; ?>
+<header class="page-hero"><div class="container"><span class="eyebrow">Rechtliches</span><h1>Impressum</h1></div></header>
+<main class="section">
+<main class="container content-panel bio-copy">
   <h1>Impressum</h1>
 
   <h2>Angaben gemäß § 5 TMG</h2>
@@ -34,7 +32,7 @@
   <h2>Urheberrecht</h2>
   <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
 
-  <p style="margin-top: 2rem; font-size: 0.9rem; color: #555;">Letzte Aktualisierung: Oktober 2025</p>
+  <p class="muted" style="margin-top:2rem">Letzte Aktualisierung: Oktober 2025</p>
 </main>
-
+</main>
 <?php include 'assets/footer.php'; ?>

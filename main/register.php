@@ -29,11 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $error = "❌ Bitte alle Felder ausfüllen.";
         } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $error = "❌ Ungültige E-Mail-Adresse.";
-        } elseif (mb_strlen($username) < 3 || mb_strlen($username) > 32) {
+        } elseif (strlen($username) < 3 || strlen($username) > 32) {
             $error = "❌ Benutzername muss zwischen 3 und 32 Zeichen lang sein.";
         } elseif ($password !== $password_confirm) {
             $error = "❌ Passwörter stimmen nicht überein.";
-        } elseif (mb_strlen($password) < 8) {
+        } elseif (strlen($password) < 8) {
             $error = "❌ Passwort muss mindestens 8 Zeichen lang sein.";
         } else {
             $sqlCheck = "SELECT id FROM benutzer WHERE username = ? OR email = ? LIMIT 1";
